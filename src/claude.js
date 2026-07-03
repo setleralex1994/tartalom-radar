@@ -11,9 +11,15 @@ import {
   buildContentUser,
 } from './prompts.js';
 
-const client = new Anthropic(); // ANTHROPIC_API_KEY a kornyezetbol
 const SUMMARY_MODEL = process.env.CLAUDE_SUMMARY_MODEL || 'claude-opus-4-8';
 const CONTENT_MODEL = process.env.CLAUDE_CONTENT_MODEL || 'claude-opus-4-8';
+
+// Lusta inicializalas: kulcs nelkul is importalhato a modul (a gyujto/online resz nem hasznalja).
+let _client;
+function client() {
+  if (!_client) _client = new Anthropic();
+  return _client;
+}
 
 function textOf(res) {
   return res.content
@@ -24,7 +30,7 @@ function textOf(res) {
 
 // Egy cikk kiertekelese + magyar osszefoglalo, strukturalt JSON kimenettel.
 export async function summarizeItem(item) {
-  const res = await client.messages.create({
+  const res = await client().messages.create({
     model: SUMMARY_MODEL,
     max_tokens: 1200,
     system: SUMMARY_SYSTEM,
@@ -36,7 +42,7 @@ export async function summarizeItem(item) {
 
 // A het temainak/trendjeinek kiemelese + tartalomotletek (szabad szoveg).
 export async function synthesizeTrends(items) {
-  const res = await client.messages.create({
+  const res = await client().messages.create({
     model: SUMMARY_MODEL,
     max_tokens: 1500,
     system: TREND_SYSTEM,
@@ -47,7 +53,7 @@ export async function synthesizeTrends(items) {
 
 // "Gombnyomasra tartalom": DO!marketing forgatokonyv / LinkedIn / hirlevel.
 export async function generateContent(item, format) {
-  const res = await client.messages.create({
+  const res = await client().messages.create({
     model: CONTENT_MODEL,
     max_tokens: 6000,
     thinking: { type: 'adaptive' }, // kreativ, tobblepéses feladat -> adaptiv gondolkodas

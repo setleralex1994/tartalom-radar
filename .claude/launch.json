@@ -2,10 +2,10 @@
   "version": "0.0.1",
   "configurations": [
     {
-      "name": "dashboard",
+      "name": "site",
       "runtimeExecutable": "npm",
-      "runtimeArgs": ["run", "serve"],
-      "port": 4310
+      "runtimeArgs": ["run", "site"],
+      "port": 4320
     }
   ]
 }

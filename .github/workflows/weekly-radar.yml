@@ -6,6 +6,9 @@ on:
     - cron: '0 6 * * 1'
   workflow_dispatch: {} # kezi inditas is lehetseges a GitHub Actions fulon
 
+permissions:
+  contents: write # a frissitett hirtar visszacommitolasahoz kell
+
 jobs:
   radar:
     runs-on: ubuntu-latest
@@ -21,17 +24,9 @@ jobs:
       - name: Fuggosegek
         run: npm ci
 
-      # A dedup-allapot (data/store.json) megorzese futasok kozott, hogy egy hirt
-      # ne osszegezzunk/kuldjunk ki tobbszor. A datum nelkuli scrape-forrasoknal fontos.
-      - name: Allapot visszaallitasa
-        uses: actions/cache@v4
-        with:
-          path: data
-          key: radar-store-${{ github.run_id }}
-          restore-keys: |
-            radar-store-
-
       - name: Radar futtatasa
+        # ANTHROPIC_API_KEY nelkul: csak gyujtes (az online felulethez ez is eleg).
+        # Kulccsal: magyar osszefoglalo + relevancia + heti e-mail is megy.
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           GMAIL_USER: ${{ secrets.GMAIL_USER }}
@@ -41,7 +36,18 @@ jobs:
           MIN_RELEVANCE: '3'
         run: node src/radar.js
 
-      # A heti HTML-archivum letoltheto lesz a futas oldalarol (Artifacts).
+      - name: Frissitett hirtar visszacommitolasa
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs/data/items.json
+          if git diff --staged --quiet; then
+            echo "Nincs valtozas a hirtarban."
+          else
+            git commit -m "data: heti hir-frissites [skip ci]"
+            git push
+          fi
+
       - name: Heti archivum feltoltese
         if: always()
         uses: actions/upload-artifact@v4

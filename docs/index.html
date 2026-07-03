@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="hu">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>PPC Radar — hírek &amp; prompt-generátor</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="wrap head">
+      <div>
+        <h1>PPC Radar</h1>
+        <div class="sub">Friss szakmai hírek + prompt-generátor tartalomhoz</div>
+      </div>
+      <div id="updated" class="updated"></div>
+    </div>
+  </header>
+
+  <div class="wrap toolbar">
+    <input id="search" type="search" placeholder="Keresés a hírek közt…" />
+    <select id="source"><option value="">Összes forrás</option></select>
+    <select id="period">
+      <option value="0">Teljes időszak</option>
+      <option value="30">Utolsó 30 nap</option>
+      <option value="90">Utolsó 90 nap</option>
+      <option value="183">Utolsó fél év</option>
+    </select>
+    <span id="count" class="count"></span>
+  </div>
+
+  <main id="list" class="wrap"></main>
+
+  <div id="empty" class="wrap empty" hidden>
+    Még nincs tárolt hír. A heti gyűjtés (GitHub Actions) után jelennek meg itt.
+  </div>
+
+  <footer class="wrap foot">
+    A „Prompt készítése” gomb egy kész promptot ad — másold be ChatGPT-be vagy Claude-ba.
+    Az adat ~fél évre visszamenőleg tárolódik.
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

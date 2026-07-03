@@ -38,6 +38,27 @@ export async function runRadar({ send = true } = {}) {
   }
   console.log(`Osszesen ${collected.length} uj cikk feldolgozasra.`);
 
+  const hasKey = !!process.env.ANTHROPIC_API_KEY;
+  if (!hasKey) {
+    // Kulcs nelkul: csak gyujtes es tarolas (az online felulethez ez is eleg).
+    // A prompt-generalas ugyis a bongeszo oldalan, kulcs nelkul tortenik.
+    for (const it of collected) {
+      saveItem({
+        ...it,
+        published: it.published ? it.published.toISOString() : null,
+        week,
+        importance: 0,
+        relevance: 0,
+        summary_hu: '',
+        why_hu: '',
+        action_hu: '',
+        seen_at: new Date().toISOString(),
+      });
+    }
+    console.log('ANTHROPIC_API_KEY nincs -> csak gyujtes (nincs osszefoglalo/e-mail).');
+    return { count: collected.length, week, summarized: false };
+  }
+
   // 2) Claude osszefoglalo + relevancia
   const processed = [];
   for (const it of collected) {
@@ -79,7 +100,7 @@ export async function runRadar({ send = true } = {}) {
   writeFileSync(join(root, 'archive', `${week}.html`), html, 'utf8');
   if (send && processed.length) await sendDigest(html, week);
 
-  return { count: processed.length, week };
+  return { count: processed.length, week, summarized: true };
 }
 
 // CLI: node src/radar.js
