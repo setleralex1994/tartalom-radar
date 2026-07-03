@@ -1,4 +1,4 @@
-// PPC Radar — online felulet. Statikus: beolvassa a data/items.json-t es a bongeszoben
+// Tartalom Radar — online felulet. Statikus: beolvassa a data/items.json-t es a bongeszoben
 // osszeallitja a promptot a valasztott tartalomtipusra. Nem kell API-kulcs.
 
 // --- Tartalomtipusok es promptsablonok ---------------------------------------

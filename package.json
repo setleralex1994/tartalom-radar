@@ -1,7 +1,7 @@
 {
-  "name": "ppc-radar-tartalomgyar",
+  "name": "tartalom-radar",
   "version": "0.1.0",
-  "description": "PPC Tartalom Radar + Tartalomgyar — heti szakmai hir-osszefoglalo es DO!marketing forgatokonyv-generator",
+  "description": "Tartalom Radar — friss szakmai hir-aggregator + tartalom-prompt generator (PPC/marketing)",
   "type": "module",
   "scripts": {
     "radar": "node src/radar.js",

@@ -45,7 +45,7 @@ function page(week, items, weeks) {
 
   return `<!doctype html><html lang="hu"><head><meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>PPC Radar &amp; Tartalomgyár</title>
+  <title>Tartalom Radar</title>
   <style>
     *{box-sizing:border-box} body{margin:0;background:#faf8f4;color:#1a1a1a;font-family:-apple-system,Segoe UI,Roboto,Arial,sans-serif}
     header{background:#fff;border-bottom:1px solid #eee;padding:16px 20px;display:flex;gap:12px;align-items:center;flex-wrap:wrap}
@@ -65,7 +65,7 @@ function page(week, items, weeks) {
     .empty{background:#fff;border:1px dashed #ccc;border-radius:12px;padding:24px;text-align:center;color:#777}
   </style></head><body>
   <header>
-    <h1>PPC Radar &amp; Tartalomgyár</h1>
+    <h1>Tartalom Radar</h1>
     <select id="week" onchange="location.href='/?week='+encodeURIComponent(this.value)">${weekOptions}</select>
     <button id="runbtn" onclick="runRadar()">Radar futtatása most</button>
   </header>
@@ -123,5 +123,5 @@ app.post('/api/run', async (req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`PPC Radar dashboard: http://localhost:${PORT}`);
+  console.log(`Tartalom Radar dashboard: http://localhost:${PORT}`);
 });

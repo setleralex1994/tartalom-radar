@@ -1,4 +1,4 @@
-# PPC Radar &amp; Tartalomgyár
+# Tartalom Radar
 
 Helyi Node app egy PPC specialistának, két modullal:
 

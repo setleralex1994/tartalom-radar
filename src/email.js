@@ -33,13 +33,13 @@ export function buildHtml(items, trends, week) {
 
   return `<!doctype html><html><body style="margin:0;background:#fafafa;font-family:-apple-system,Segoe UI,Roboto,Arial,sans-serif">
     <div style="max-width:640px;margin:0 auto;padding:24px">
-      <h1 style="font-size:20px;margin:0 0 4px">PPC Tartalom Radar</h1>
+      <h1 style="font-size:20px;margin:0 0 4px">Tartalom Radar</h1>
       <div style="color:#888;font-size:13px;margin-bottom:20px">${escapeHtml(week)} · ${
     items.length
   } releváns hír</div>
       ${trendBlock}
       <table style="width:100%;border-collapse:collapse">${rows}</table>
-      <div style="color:#aaa;font-size:12px;margin-top:24px">Automatikus összefoglaló · PPC Radar &amp; Tartalomgyár</div>
+      <div style="color:#aaa;font-size:12px;margin-top:24px">Automatikus összefoglaló · Tartalom Radar</div>
     </div>
   </body></html>`;
 }
@@ -65,9 +65,9 @@ export async function sendDigest(html, week) {
     return false;
   }
   await transport().sendMail({
-    from: `"PPC Radar & Tartalomgyar" <${user}>`,
+    from: `"Tartalom Radar" <${user}>`,
     to,
-    subject: `PPC Tartalom Radar — ${week}`,
+    subject: `Tartalom Radar — ${week}`,
     html,
   });
   return true;
