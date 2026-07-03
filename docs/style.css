@@ -1,41 +1,56 @@
 :root {
-  --bg: #faf8f4;
+  --bg: #f7f5f0;
   --card: #ffffff;
-  --line: #ececec;
-  --ink: #1a1a1a;
-  --mut: #777;
-  --acc: #7a4a24;
-  --acc2: #f4f1ea;
+  --line: #e7e3d8;
+  --navy: #1d263a;   /* setleralex.hu sötét */
+  --ink: #1d263a;
+  --mut: #6b7280;
+  --brand: #edbb5f;  /* setleralex.hu arany */
+  --brand-dark: #cf9a34;
 }
 * { box-sizing: border-box; }
 body { margin: 0; background: var(--bg); color: var(--ink);
   font-family: -apple-system, "Segoe UI", Roboto, Arial, sans-serif; line-height: 1.5; }
 .wrap { max-width: 820px; margin: 0 auto; padding: 0 18px; }
-header { background: #fff; border-bottom: 1px solid var(--line); }
-.head { display: flex; align-items: center; justify-content: space-between; padding: 16px 18px; gap: 12px; }
-h1 { font-size: 20px; margin: 0; }
-.sub { color: var(--mut); font-size: 13px; }
-.updated { color: var(--mut); font-size: 12px; text-align: right; }
+
+header { background: var(--navy); border-bottom: 3px solid var(--brand); color: #fff; }
+.head { display: flex; align-items: center; justify-content: space-between; padding: 18px; gap: 12px; }
+h1 { font-size: 20px; margin: 0; color: #fff; }
+.sub { color: #c3cad8; font-size: 13px; }
+.headright { text-align: right; }
+.credit { display: inline-block; color: var(--brand); font-weight: 700; font-size: 13px; text-decoration: none; }
+.credit:hover { text-decoration: underline; }
+.updated { color: #9aa3b4; font-size: 12px; margin-top: 4px; }
+
 .toolbar { display: flex; gap: 8px; align-items: center; padding: 16px 18px 4px; flex-wrap: wrap; }
 input, select, button, textarea { font-size: 14px; font-family: inherit; }
-#search { flex: 1; min-width: 180px; padding: 9px 12px; border: 1px solid #ccc; border-radius: 9px; }
-select { padding: 9px 10px; border: 1px solid #ccc; border-radius: 9px; background: #fff; }
+#search { flex: 1; min-width: 180px; padding: 9px 12px; border: 1px solid #d7d2c4; border-radius: 9px; }
+select { padding: 9px 10px; border: 1px solid #d7d2c4; border-radius: 9px; background: #fff; }
 .count { color: var(--mut); font-size: 13px; margin-left: auto; }
+
 .card { background: var(--card); border: 1px solid var(--line); border-radius: 12px;
   padding: 16px 18px; margin: 14px 0; }
 .meta { font-size: 12px; color: var(--mut); }
-.title { display: block; font-size: 17px; font-weight: 600; margin: 3px 0 8px; color: var(--ink); text-decoration: none; }
-.title:hover { text-decoration: underline; }
+.title { display: block; font-size: 17px; font-weight: 600; margin: 3px 0 8px; color: var(--navy); text-decoration: none; }
+.title:hover { text-decoration: underline; text-decoration-color: var(--brand); }
 .body { font-size: 14px; }
 .small { font-size: 13px; color: #555; margin-top: 4px; }
+.rel { color: var(--brand-dark); }
+
 .tools { margin-top: 12px; display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
-button { background: var(--acc); color: #fff; border: 1px solid var(--acc); border-radius: 9px; padding: 9px 12px; cursor: pointer; }
-button.ghost { background: #fff; color: var(--acc); }
+button { background: var(--brand); color: var(--navy); border: 1px solid var(--brand);
+  border-radius: 9px; padding: 9px 12px; cursor: pointer; font-weight: 600; }
+button:hover { background: var(--brand-dark); border-color: var(--brand-dark); color: #fff; }
+button.ghost { background: #fff; color: var(--navy); border: 1px solid var(--brand); }
+button.ghost:hover { background: #fff; color: var(--brand-dark); }
 button:active { transform: translateY(1px); }
+
 .out { margin-top: 12px; display: none; }
 .out.show { display: block; }
 .out textarea { width: 100%; min-height: 220px; padding: 12px; border: 1px solid #ddd;
-  border-radius: 9px; background: #f7f5f0; color: #222; resize: vertical; }
-.rel { color: var(--acc); }
+  border-radius: 9px; background: #faf7ef; color: #222; resize: vertical; }
+
 .empty, .foot { color: var(--mut); font-size: 13px; padding: 20px 18px; }
 .foot { border-top: 1px solid var(--line); margin-top: 24px; }
+.foot a { color: var(--brand-dark); font-weight: 600; text-decoration: none; }
+.foot a:hover { text-decoration: underline; }

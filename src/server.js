@@ -45,18 +45,18 @@ function page(week, items, weeks) {
 
   return `<!doctype html><html lang="hu"><head><meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Tartalom Radar</title>
+  <title>PPC hírek és tartalomgyár</title>
   <style>
     *{box-sizing:border-box} body{margin:0;background:#faf8f4;color:#1a1a1a;font-family:-apple-system,Segoe UI,Roboto,Arial,sans-serif}
-    header{background:#fff;border-bottom:1px solid #eee;padding:16px 20px;display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+    header{background:#fff;border-bottom:3px solid #edbb5f;padding:16px 20px;display:flex;gap:12px;align-items:center;flex-wrap:wrap}
     header h1{font-size:18px;margin:0;flex:1}
     select,button{font-size:14px;padding:8px 10px;border-radius:8px;border:1px solid #ccc;background:#fff}
-    button{background:#7a4a24;color:#fff;border-color:#7a4a24;cursor:pointer}
+    button{background:#edbb5f;color:#1d263a;border-color:#edbb5f;cursor:pointer;font-weight:600}
     button:disabled{opacity:.6;cursor:default}
     .wrap{max-width:760px;margin:0 auto;padding:20px}
     .card{background:#fff;border:1px solid #eee;border-radius:12px;padding:16px 18px;margin-bottom:16px}
     .meta{font-size:12px;color:#999}
-    .title{display:block;font-size:17px;font-weight:600;margin:2px 0 8px;color:#1a1a1a;text-decoration:none}
+    .title{display:block;font-size:17px;font-weight:600;margin:2px 0 8px;color:#1d263a;text-decoration:none}
     .sum{font-size:14px;line-height:1.5}
     .small{font-size:13px;color:#555;margin-top:4px}
     .tools{margin-top:12px;display:flex;gap:8px;flex-wrap:wrap}
@@ -65,9 +65,10 @@ function page(week, items, weeks) {
     .empty{background:#fff;border:1px dashed #ccc;border-radius:12px;padding:24px;text-align:center;color:#777}
   </style></head><body>
   <header>
-    <h1>Tartalom Radar</h1>
+    <h1>PPC hírek és tartalomgyár</h1>
     <select id="week" onchange="location.href='/?week='+encodeURIComponent(this.value)">${weekOptions}</select>
     <button id="runbtn" onclick="runRadar()">Radar futtatása most</button>
+    <a href="https://www.setleralex.hu" target="_blank" rel="noopener" style="margin-left:auto;color:#cf9a34;font-weight:600;text-decoration:none">setleralex.hu</a>
   </header>
   <div class="wrap">${cards}</div>
   <script>
@@ -123,5 +124,5 @@ app.post('/api/run', async (req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`Tartalom Radar dashboard: http://localhost:${PORT}`);
+  console.log(`PPC hírek és tartalomgyár dashboard: http://localhost:${PORT}`);
 });

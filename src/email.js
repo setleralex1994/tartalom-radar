@@ -4,8 +4,8 @@ import { escapeHtml } from './util.js';
 
 export function buildHtml(items, trends, week) {
   const trendBlock = trends
-    ? `<div style="background:#f4f1ea;border:1px solid #e5ddc8;border-radius:10px;padding:16px 18px;margin:0 0 24px">
-         <h2 style="margin:0 0 8px;font-size:16px;color:#7a4a24">A hét témái &amp; tartalomötletek</h2>
+    ? `<div style="background:#fbf3df;border:1px solid #edbb5f;border-radius:10px;padding:16px 18px;margin:0 0 24px">
+         <h2 style="margin:0 0 8px;font-size:16px;color:#b5852a">A hét témái &amp; tartalomötletek</h2>
          <div style="white-space:pre-wrap;font-size:14px;line-height:1.55;color:#333">${escapeHtml(trends)}</div>
        </div>`
     : '';
@@ -18,7 +18,7 @@ export function buildHtml(items, trends, week) {
         i.category || ''
       )} · relevancia ${rel}</div>
         <div style="font-size:16px;font-weight:600;margin:2px 0 6px">
-          <a href="${escapeHtml(i.link)}" style="color:#1a1a1a;text-decoration:none">${escapeHtml(
+          <a href="${escapeHtml(i.link)}" style="color:#1d263a;text-decoration:none">${escapeHtml(
         i.title
       )}</a>
         </div>
@@ -33,13 +33,13 @@ export function buildHtml(items, trends, week) {
 
   return `<!doctype html><html><body style="margin:0;background:#fafafa;font-family:-apple-system,Segoe UI,Roboto,Arial,sans-serif">
     <div style="max-width:640px;margin:0 auto;padding:24px">
-      <h1 style="font-size:20px;margin:0 0 4px">Tartalom Radar</h1>
+      <h1 style="font-size:20px;margin:0 0 4px;color:#1d263a">PPC hírek és tartalomgyár</h1>
       <div style="color:#888;font-size:13px;margin-bottom:20px">${escapeHtml(week)} · ${
     items.length
   } releváns hír</div>
       ${trendBlock}
       <table style="width:100%;border-collapse:collapse">${rows}</table>
-      <div style="color:#aaa;font-size:12px;margin-top:24px">Automatikus összefoglaló · Tartalom Radar</div>
+      <div style="color:#aaa;font-size:12px;margin-top:24px">Automatikus összefoglaló · <a href="https://www.setleralex.hu" style="color:#cf9a34;text-decoration:none">setleralex.hu</a></div>
     </div>
   </body></html>`;
 }
@@ -65,9 +65,9 @@ export async function sendDigest(html, week) {
     return false;
   }
   await transport().sendMail({
-    from: `"Tartalom Radar" <${user}>`,
+    from: `"PPC hírek és tartalomgyár" <${user}>`,
     to,
-    subject: `Tartalom Radar — ${week}`,
+    subject: `PPC hírek és tartalomgyár — ${week}`,
     html,
   });
   return true;

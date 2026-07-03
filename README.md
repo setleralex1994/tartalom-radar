@@ -1,4 +1,6 @@
-# Tartalom Radar
+# PPC hírek és tartalomgyár
+
+_Készítette: [www.setleralex.hu](https://www.setleralex.hu)_
 
 Helyi Node app egy PPC specialistának, két modullal:
 
