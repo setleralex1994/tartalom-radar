@@ -5,10 +5,10 @@ import { readFileSync, writeFileSync, mkdirSync, realpathSync } from 'fs';
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
 import { fetchSource } from './fetch.js';
-import { isSeen, saveItem, getItem, itemsMissingSummary, itemsForWeek } from './db.js';
+import { isSeen, saveItem, getItem, itemsMissingSummary, itemsForWeek, allItems } from './db.js';
 import { summarizeItem, synthesizeTrends } from './claude.js';
 import { buildHtml, sendDigest } from './email.js';
-import { isoWeek } from './util.js';
+import { isoWeek, normTitle } from './util.js';
 import { isPPCRelevant } from './topic.js';
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
@@ -20,8 +20,10 @@ export async function runRadar({ send = true } = {}) {
   const cutoff = Date.now() - DAYS * 86400000;
   const week = isoWeek();
 
-  // 1) Lehuzas + dedup + friss szures
+  // 1) Lehuzas + dedup (guid + tema) + friss + PPC szures
   const collected = [];
+  // Egy temara egy forras eleg: a mar tarolt es az e futasban gyujtott cimeket kovetjuk.
+  const titleKeys = new Set(allItems().map((i) => normTitle(i.title)));
   for (const s of sources) {
     try {
       const items = await fetchSource(s);
@@ -34,10 +36,16 @@ export async function runRadar({ send = true } = {}) {
           skipped++;
           continue;
         }
+        const key = normTitle(it.title);
+        if (titleKeys.has(key)) {
+          skipped++; // ugyanaz a tema mashonnan
+          continue;
+        }
+        titleKeys.add(key);
         collected.push(it);
         added++;
       }
-      console.log(`[${s.name}] ${items.length} tetel, ${added} uj PPC${skipped ? `, ${skipped} kiszurve (nem PPC)` : ''}`);
+      console.log(`[${s.name}] ${items.length} tetel, ${added} uj${skipped ? `, ${skipped} kihagyva` : ''}`);
     } catch (e) {
       console.warn(`[${s.name}] hiba: ${e.message}`);
     }

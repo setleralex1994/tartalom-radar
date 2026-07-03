@@ -61,6 +61,10 @@ export function allWeeks() {
   return [...new Set(Object.values(db.items).map((i) => i.week))].sort().reverse();
 }
 
+export function allItems() {
+  return Object.values(db.items);
+}
+
 // Osszefoglalo nelkuli tetelek (frissebb eloszor) — a backfillhez.
 export function itemsMissingSummary() {
   return Object.values(db.items)

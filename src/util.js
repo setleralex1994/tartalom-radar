@@ -17,6 +17,16 @@ export function isoWeek(d = new Date()) {
   return `${date.getUTCFullYear()}-W${String(week).padStart(2, '0')}`;
 }
 
+// Cim normalizalasa tema-duplikatum szureshez (egy temara egy forras eleg).
+export function normTitle(s = '') {
+  return String(s)
+    .toLowerCase()
+    .normalize('NFD')
+    .replace(/[̀-ͯ]/g, '') // ekezetek le
+    .replace(/[^a-z0-9]+/g, ' ')
+    .trim();
+}
+
 export function escapeHtml(s = '') {
   return String(s).replace(
     /[&<>"']/g,

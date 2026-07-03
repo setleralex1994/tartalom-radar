@@ -130,6 +130,8 @@ function filtered() {
   const days = Number(document.getElementById('period').value);
   const cutoff = days ? Date.now() - days * 86400000 : 0;
   return ITEMS.filter((i) => {
+    // Csak a szakmailag ertekes hirek: az osszefoglalt, de gyenge relevanciaju (1-2) tetelt elrejtjuk.
+    if (i.relevance && i.relevance < 3) return false;
     if (src && i.source !== src) return false;
     if (cutoff && dateOf(i) && dateOf(i) < cutoff) return false;
     if (q) {

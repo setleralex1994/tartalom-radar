@@ -38,37 +38,5 @@
     "lang": "en",
     "category": "PPC how-to",
     "ppc": false
-  },
-  {
-    "name": "Google Hírek — Google Ads",
-    "type": "rss",
-    "url": "https://news.google.com/rss/search?q=%22Google%20Ads%22%20when%3A7d&hl=en-US&gl=US&ceid=US:en",
-    "lang": "en",
-    "category": "Téma-radar",
-    "ppc": false
-  },
-  {
-    "name": "Google Hírek — Meta Ads",
-    "type": "rss",
-    "url": "https://news.google.com/rss/search?q=(%22Meta%20Ads%22%20OR%20%22Facebook%20Ads%22%20OR%20%22Instagram%20Ads%22)%20when%3A7d&hl=en-US&gl=US&ceid=US:en",
-    "lang": "en",
-    "category": "Téma-radar",
-    "ppc": false
-  },
-  {
-    "name": "Google Hírek — Performance Max",
-    "type": "rss",
-    "url": "https://news.google.com/rss/search?q=(%22Performance%20Max%22%20OR%20%22PMax%22)%20when%3A7d&hl=en-US&gl=US&ceid=US:en",
-    "lang": "en",
-    "category": "Téma-radar",
-    "ppc": false
-  },
-  {
-    "name": "Google Hírek — Microsoft/TikTok Ads",
-    "type": "rss",
-    "url": "https://news.google.com/rss/search?q=(%22Microsoft%20Ads%22%20OR%20%22TikTok%20Ads%22%20OR%20%22LinkedIn%20Ads%22)%20when%3A7d&hl=en-US&gl=US&ceid=US:en",
-    "lang": "en",
-    "category": "Téma-radar",
-    "ppc": false
   }
 ]

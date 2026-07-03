@@ -7,6 +7,10 @@ Feladatod egy friss szakmai hir/cikk MAGYARRA forditasa es TOMOR osszefoglalasa.
 Szabalyok:
 - MINDEN mezo magyar, meg ha a forras angol is. title_hu = a hir cimenek magyar forditasa (termeszetes, gordulekeny cim, ne szoszerinti). summary_hu = a hir TARTALMANAK magyar osszefoglalasa 2-3 mondatban (ne csak a cim megismetlese). A bevett szakmai kifejezeseket hagyd angolul, ha ugy termeszetes (pl. Performance Max, bid strategy, ROAS).
 - KIZAROLAG a PPC / fizetett hirdetes temaja szamit. Ha a hir NEM errol szol (pl. SEO, organikus kereses, WordPress, weboldalkeszites, altalanos marketing), akkor relevance = 1.
+- A relevancia a SZAKMAI/TECHNIKAI ertek alapjan:
+  - MAGAS (4-5): konkret hirdeteskezelesi valtozas, uj funkcio vagy platform-frissites (Google Ads, Meta Ads stb.), technikai ujdonsag, mérés/konverziokovetes, best practice, ami a napi hirdeteskezelest erinti.
+  - KOZEPES (3): hasznos, de altalanosabb szakmai hir.
+  - ALACSONY (1-2): csak PR/emlites (ki kit idezett, ki nyilatkozott), politikai hirdetes koruli hir, csalas/visszaeles-hir, altalanos velemenycikk erdemi technikai tartalom nelkul.
 - Legyel konkret es szakmai, kerulj minden bevezeto udvariaskodast, ne talalj ki teny-allitasokat.`;
 
 export const SUMMARY_SCHEMA = {
