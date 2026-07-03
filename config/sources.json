@@ -1,0 +1,73 @@
+[
+  {
+    "name": "Search Engine Land",
+    "type": "rss",
+    "url": "https://searchengineland.com/feed",
+    "lang": "en",
+    "category": "PPC/SEO hirek"
+  },
+  {
+    "name": "Search Engine Journal — PPC",
+    "type": "rss",
+    "url": "https://www.searchenginejournal.com/category/pay-per-click/feed/",
+    "lang": "en",
+    "category": "PPC"
+  },
+  {
+    "name": "Google Ads & Commerce Blog",
+    "type": "rss",
+    "url": "https://blog.google/products/ads-commerce/rss/",
+    "lang": "en",
+    "category": "Google hivatalos"
+  },
+  {
+    "name": "WordStream Blog",
+    "type": "rss",
+    "url": "https://www.wordstream.com/blog/feed",
+    "lang": "en",
+    "category": "PPC how-to"
+  },
+  {
+    "name": "PPC Hero",
+    "type": "rss",
+    "url": "https://www.ppchero.com/feed/",
+    "lang": "en",
+    "category": "PPC"
+  },
+  {
+    "name": "Analytics Mania",
+    "type": "rss",
+    "url": "https://news.google.com/rss/search?q=site:analyticsmania.com%20when%3A14d&hl=en-US&gl=US&ceid=US:en",
+    "lang": "en",
+    "category": "Analytics/GTM"
+  },
+  {
+    "name": "Toldi Marketing blog",
+    "type": "scrape",
+    "url": "https://toldimarketing.hu/blog/",
+    "selector": "a[href*=\"/blog/\"]",
+    "lang": "hu",
+    "category": "Magyar szakmai"
+  },
+  {
+    "name": "Google Hirek — Google Ads",
+    "type": "rss",
+    "url": "https://news.google.com/rss/search?q=%22Google%20Ads%22%20when%3A7d&hl=en-US&gl=US&ceid=US:en",
+    "lang": "en",
+    "category": "Tema-radar"
+  },
+  {
+    "name": "Google Hirek — Meta Ads",
+    "type": "rss",
+    "url": "https://news.google.com/rss/search?q=%22Meta%20Ads%22%20OR%20%22Facebook%20Ads%22%20when%3A7d&hl=en-US&gl=US&ceid=US:en",
+    "lang": "en",
+    "category": "Tema-radar"
+  },
+  {
+    "name": "Google Hirek — Performance Max",
+    "type": "rss",
+    "url": "https://news.google.com/rss/search?q=%22Performance%20Max%22%20when%3A7d&hl=en-US&gl=US&ceid=US:en",
+    "lang": "en",
+    "category": "Tema-radar"
+  }
+]
