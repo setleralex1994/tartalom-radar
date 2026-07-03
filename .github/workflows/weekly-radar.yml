@@ -1,0 +1,51 @@
+name: Heti PPC Radar
+
+on:
+  schedule:
+    # Minden hetfo 06:00 UTC (nyaron ~08:00, telen ~07:00 CET). A gepednek nem kell bekapcsolva lennie.
+    - cron: '0 6 * * 1'
+  workflow_dispatch: {} # kezi inditas is lehetseges a GitHub Actions fulon
+
+jobs:
+  radar:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Kod letoltese
+        uses: actions/checkout@v4
+
+      - name: Node beallitasa
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Fuggosegek
+        run: npm ci
+
+      # A dedup-allapot (data/store.json) megorzese futasok kozott, hogy egy hirt
+      # ne osszegezzunk/kuldjunk ki tobbszor. A datum nelkuli scrape-forrasoknal fontos.
+      - name: Allapot visszaallitasa
+        uses: actions/cache@v4
+        with:
+          path: data
+          key: radar-store-${{ github.run_id }}
+          restore-keys: |
+            radar-store-
+
+      - name: Radar futtatasa
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          GMAIL_USER: ${{ secrets.GMAIL_USER }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          DIGEST_TO: ${{ secrets.DIGEST_TO }}
+          RADAR_DAYS: '7'
+          MIN_RELEVANCE: '3'
+        run: node src/radar.js
+
+      # A heti HTML-archivum letoltheto lesz a futas oldalarol (Artifacts).
+      - name: Heti archivum feltoltese
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: heti-archivum
+          path: archive/*.html
+          if-no-files-found: ignore
