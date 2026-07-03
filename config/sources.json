@@ -1,73 +1,74 @@
 [
   {
-    "name": "Search Engine Land",
+    "name": "Search Engine Land — PPC",
     "type": "rss",
-    "url": "https://searchengineland.com/feed",
+    "url": "https://searchengineland.com/library/ppc/feed",
     "lang": "en",
-    "category": "PPC/SEO hirek"
+    "category": "PPC",
+    "ppc": true
   },
   {
     "name": "Search Engine Journal — PPC",
     "type": "rss",
     "url": "https://www.searchenginejournal.com/category/pay-per-click/feed/",
     "lang": "en",
-    "category": "PPC"
-  },
-  {
-    "name": "Google Ads & Commerce Blog",
-    "type": "rss",
-    "url": "https://blog.google/products/ads-commerce/rss/",
-    "lang": "en",
-    "category": "Google hivatalos"
-  },
-  {
-    "name": "WordStream Blog",
-    "type": "rss",
-    "url": "https://www.wordstream.com/blog/feed",
-    "lang": "en",
-    "category": "PPC how-to"
+    "category": "PPC",
+    "ppc": true
   },
   {
     "name": "PPC Hero",
     "type": "rss",
     "url": "https://www.ppchero.com/feed/",
     "lang": "en",
-    "category": "PPC"
+    "category": "PPC",
+    "ppc": true
   },
   {
-    "name": "Analytics Mania",
+    "name": "Google Ads & Commerce Blog",
     "type": "rss",
-    "url": "https://news.google.com/rss/search?q=site:analyticsmania.com%20when%3A14d&hl=en-US&gl=US&ceid=US:en",
+    "url": "https://blog.google/products/ads-commerce/rss/",
     "lang": "en",
-    "category": "Analytics/GTM"
+    "category": "Google hivatalos",
+    "ppc": true
   },
   {
-    "name": "Toldi Marketing blog",
-    "type": "scrape",
-    "url": "https://toldimarketing.hu/blog/",
-    "selector": "a[href*=\"/blog/\"]",
-    "lang": "hu",
-    "category": "Magyar szakmai"
+    "name": "WordStream Blog",
+    "type": "rss",
+    "url": "https://www.wordstream.com/blog/feed",
+    "lang": "en",
+    "category": "PPC how-to",
+    "ppc": false
   },
   {
-    "name": "Google Hirek — Google Ads",
+    "name": "Google Hírek — Google Ads",
     "type": "rss",
     "url": "https://news.google.com/rss/search?q=%22Google%20Ads%22%20when%3A7d&hl=en-US&gl=US&ceid=US:en",
     "lang": "en",
-    "category": "Tema-radar"
+    "category": "Téma-radar",
+    "ppc": false
   },
   {
-    "name": "Google Hirek — Meta Ads",
+    "name": "Google Hírek — Meta Ads",
     "type": "rss",
-    "url": "https://news.google.com/rss/search?q=%22Meta%20Ads%22%20OR%20%22Facebook%20Ads%22%20when%3A7d&hl=en-US&gl=US&ceid=US:en",
+    "url": "https://news.google.com/rss/search?q=(%22Meta%20Ads%22%20OR%20%22Facebook%20Ads%22%20OR%20%22Instagram%20Ads%22)%20when%3A7d&hl=en-US&gl=US&ceid=US:en",
     "lang": "en",
-    "category": "Tema-radar"
+    "category": "Téma-radar",
+    "ppc": false
   },
   {
-    "name": "Google Hirek — Performance Max",
+    "name": "Google Hírek — Performance Max",
     "type": "rss",
-    "url": "https://news.google.com/rss/search?q=%22Performance%20Max%22%20when%3A7d&hl=en-US&gl=US&ceid=US:en",
+    "url": "https://news.google.com/rss/search?q=(%22Performance%20Max%22%20OR%20%22PMax%22)%20when%3A7d&hl=en-US&gl=US&ceid=US:en",
     "lang": "en",
-    "category": "Tema-radar"
+    "category": "Téma-radar",
+    "ppc": false
+  },
+  {
+    "name": "Google Hírek — Microsoft/TikTok Ads",
+    "type": "rss",
+    "url": "https://news.google.com/rss/search?q=(%22Microsoft%20Ads%22%20OR%20%22TikTok%20Ads%22%20OR%20%22LinkedIn%20Ads%22)%20when%3A7d&hl=en-US&gl=US&ceid=US:en",
+    "lang": "en",
+    "category": "Téma-radar",
+    "ppc": false
   }
 ]

@@ -61,6 +61,13 @@ export function allWeeks() {
   return [...new Set(Object.values(db.items).map((i) => i.week))].sort().reverse();
 }
 
+// Osszefoglalo nelkuli tetelek (frissebb eloszor) — a backfillhez.
+export function itemsMissingSummary() {
+  return Object.values(db.items)
+    .filter((i) => !i.summary_hu)
+    .sort((a, b) => (Date.parse(b.published || b.seen_at || '') || 0) - (Date.parse(a.published || a.seen_at || '') || 0));
+}
+
 export function saveContent(itemGuid, format, body) {
   db.content.push({
     id: Date.now(),

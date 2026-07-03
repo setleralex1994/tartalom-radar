@@ -5,10 +5,11 @@ import { readFileSync, writeFileSync, mkdirSync, realpathSync } from 'fs';
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
 import { fetchSource } from './fetch.js';
-import { isSeen, saveItem } from './db.js';
+import { isSeen, saveItem, getItem, itemsMissingSummary, itemsForWeek } from './db.js';
 import { summarizeItem, synthesizeTrends } from './claude.js';
 import { buildHtml, sendDigest } from './email.js';
 import { isoWeek } from './util.js';
+import { isPPCRelevant } from './topic.js';
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 const sources = JSON.parse(readFileSync(join(root, 'config', 'sources.json'), 'utf8'));
@@ -25,66 +26,71 @@ export async function runRadar({ send = true } = {}) {
     try {
       const items = await fetchSource(s);
       let added = 0;
+      let skipped = 0;
       for (const it of items) {
         if (it.published && it.published.getTime() < cutoff) continue;
         if (isSeen(it.guid)) continue;
+        if (!isPPCRelevant(it, s.ppc)) {
+          skipped++;
+          continue;
+        }
         collected.push(it);
         added++;
       }
-      console.log(`[${s.name}] ${items.length} tetel, ${added} uj`);
+      console.log(`[${s.name}] ${items.length} tetel, ${added} uj PPC${skipped ? `, ${skipped} kiszurve (nem PPC)` : ''}`);
     } catch (e) {
       console.warn(`[${s.name}] hiba: ${e.message}`);
     }
   }
-  console.log(`Osszesen ${collected.length} uj cikk feldolgozasra.`);
+  console.log(`Osszesen ${collected.length} uj PPC cikk.`);
+
+  // 1) Uj cikkek raw tarolasa (osszefoglalo nelkul) — a felulethez ez is eleg
+  for (const it of collected) {
+    if (getItem(it.guid)) continue;
+    saveItem({
+      ...it,
+      published: it.published ? it.published.toISOString() : null,
+      week,
+      importance: 0,
+      relevance: 0,
+      summary_hu: '',
+      why_hu: '',
+      action_hu: '',
+      seen_at: new Date().toISOString(),
+    });
+  }
 
   const hasKey = !!process.env.ANTHROPIC_API_KEY;
   if (!hasKey) {
-    // Kulcs nelkul: csak gyujtes es tarolas (az online felulethez ez is eleg).
-    // A prompt-generalas ugyis a bongeszo oldalan, kulcs nelkul tortenik.
-    for (const it of collected) {
-      saveItem({
-        ...it,
-        published: it.published ? it.published.toISOString() : null,
-        week,
-        importance: 0,
-        relevance: 0,
-        summary_hu: '',
-        why_hu: '',
-        action_hu: '',
-        seen_at: new Date().toISOString(),
-      });
-    }
-    console.log('ANTHROPIC_API_KEY nincs -> csak gyujtes (nincs osszefoglalo/e-mail).');
+    console.log(`ANTHROPIC_API_KEY nincs -> ${collected.length} uj cikk tarolva, magyar osszefoglalo nelkul.`);
     return { count: collected.length, week, summarized: false };
   }
 
-  // 2) Claude osszefoglalo + relevancia
-  const processed = [];
-  for (const it of collected) {
+  // 2) Magyar osszefoglalo + relevancia: minden osszefoglalo nelkuli tetel (uj + korabbi is), korlatozva.
+  //    Igy a kulcs beallitasa utan a mar tarolt hirek is visszamenoleg megkapjak a magyar osszefoglalot.
+  const BACKFILL = Number(process.env.BACKFILL_LIMIT || 120);
+  const toSummarize = itemsMissingSummary().slice(0, BACKFILL);
+  console.log(`${toSummarize.length} tetel osszefoglalasa magyarul...`);
+  for (const it of toSummarize) {
     try {
       const a = await summarizeItem(it);
-      const row = {
+      saveItem({
         ...it,
-        published: it.published ? it.published.toISOString() : null,
-        week,
         importance: Number(a.importance) || 0,
         relevance: Number(a.relevance) || 0,
         summary_hu: a.summary_hu || '',
         why_hu: a.why_hu || '',
         action_hu: a.action_hu || '',
-        seen_at: new Date().toISOString(),
-      };
-      saveItem(row);
-      if (row.relevance >= MIN_RELEVANCE) processed.push(row);
+      });
     } catch (e) {
       console.warn(`Claude hiba (${it.title}): ${e.message}`);
     }
   }
-  processed.sort((a, b) => b.relevance - a.relevance || b.importance - a.importance);
-  console.log(`${processed.length} relevans cikk (>= ${MIN_RELEVANCE}).`);
 
-  // 3) Trend-szintezis
+  // 3) Heti e-mail: az e heti, relevans, osszefoglalt hirek
+  const processed = itemsForWeek(week).filter((i) => i.summary_hu && i.relevance >= MIN_RELEVANCE);
+  console.log(`${processed.length} relevans e heti cikk (>= ${MIN_RELEVANCE}).`);
+
   let trends = null;
   if (processed.length) {
     try {
@@ -94,7 +100,6 @@ export async function runRadar({ send = true } = {}) {
     }
   }
 
-  // 4) Archivum + e-mail
   const html = buildHtml(processed, trends, week);
   mkdirSync(join(root, 'archive'), { recursive: true });
   writeFileSync(join(root, 'archive', `${week}.html`), html, 'utf8');
