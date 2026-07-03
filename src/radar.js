@@ -76,6 +76,7 @@ export async function runRadar({ send = true } = {}) {
       const a = await summarizeItem(it);
       saveItem({
         ...it,
+        title_hu: a.title_hu || '',
         importance: Number(a.importance) || 0,
         relevance: Number(a.relevance) || 0,
         summary_hu: a.summary_hu || '',

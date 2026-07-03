@@ -19,7 +19,7 @@ export function buildHtml(items, trends, week) {
       )} · relevancia ${rel}</div>
         <div style="font-size:16px;font-weight:600;margin:2px 0 6px">
           <a href="${escapeHtml(i.link)}" style="color:#1d263a;text-decoration:none">${escapeHtml(
-        i.title
+        i.title_hu || i.title
       )}</a>
         </div>
         <div style="font-size:14px;line-height:1.5;color:#333">${escapeHtml(i.summary_hu || '')}</div>

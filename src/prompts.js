@@ -5,20 +5,21 @@
 export const SUMMARY_SYSTEM = `Egy tapasztalt magyar PPC (fizetett hirdetesi) szakerto asszisztense vagy, aki magyar es EU piacon dolgozo PPC specialistat tamogat (Google Ads, Meta/Facebook/Instagram Ads, Microsoft Ads, TikTok/LinkedIn/Amazon Ads, Performance Max, licitalas, konverziokovetes, remarketing).
 Feladatod egy friss szakmai hir/cikk MAGYARRA forditasa es TOMOR osszefoglalasa.
 Szabalyok:
-- summary_hu MINDIG magyar, meg ha a forras angol is: forditsd le es foglald ossze a hir TARTALMAT 2-3 mondatban (ne csak a cimet ismereld). A bevett szakmai kifejezeseket hagyd angolul, ha ugy termeszetes (pl. Performance Max, bid strategy).
+- MINDEN mezo magyar, meg ha a forras angol is. title_hu = a hir cimenek magyar forditasa (termeszetes, gordulekeny cim, ne szoszerinti). summary_hu = a hir TARTALMANAK magyar osszefoglalasa 2-3 mondatban (ne csak a cim megismetlese). A bevett szakmai kifejezeseket hagyd angolul, ha ugy termeszetes (pl. Performance Max, bid strategy, ROAS).
 - KIZAROLAG a PPC / fizetett hirdetes temaja szamit. Ha a hir NEM errol szol (pl. SEO, organikus kereses, WordPress, weboldalkeszites, altalanos marketing), akkor relevance = 1.
 - Legyel konkret es szakmai, kerulj minden bevezeto udvariaskodast, ne talalj ki teny-allitasokat.`;
 
 export const SUMMARY_SCHEMA = {
   type: 'object',
   properties: {
+    title_hu: { type: 'string' }, // a hir cimenek magyar forditasa
     importance: { type: 'integer' }, // 1-5: mennyire jelentos a hir a szakmaban altalaban
     relevance: { type: 'integer' }, // 1-5: mennyire relevans egy HU/EU PPC specialistanak
     summary_hu: { type: 'string' }, // 2-3 mondat: mi a hir lenyege
     why_hu: { type: 'string' }, // 1 mondat: miert szamit neki
     action_hu: { type: 'string' }, // 1 konkret javasolt lepes
   },
-  required: ['importance', 'relevance', 'summary_hu', 'why_hu', 'action_hu'],
+  required: ['title_hu', 'importance', 'relevance', 'summary_hu', 'why_hu', 'action_hu'],
   additionalProperties: false,
 };
 
@@ -29,6 +30,7 @@ Link: ${item.link}
 Kivonat: ${item.snippet || '(nincs kivonat)'}
 
 Ertekeld a fenti hirt:
+- title_hu: a cim magyar forditasa (gordulekeny, nem szoszerinti)
 - importance (1-5): mennyire jelentos a PPC/paid media szakmaban altalaban
 - relevance (1-5): mennyire relevans egy magyar/EU piacon dolgozo PPC specialistanak
 - summary_hu: 2-3 mondatos magyar osszefoglalo a hir lenyegerol
@@ -81,7 +83,7 @@ Mindig magyarul irj, kesz, masolhato szoveget adj, felesleges magyarazat nelkul.
 
 export function buildContentUser(item, format) {
   const base = `Friss szakmai hir, amibol tartalmat keszitunk:
-Cim: ${item.title}
+Cim: ${item.title_hu || item.title}
 Osszefoglalo: ${item.summary_hu || item.snippet || ''}
 Miert fontos: ${item.why_hu || ''}
 Link: ${item.link}

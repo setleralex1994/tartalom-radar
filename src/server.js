@@ -24,7 +24,7 @@ function page(week, items, weeks) {
             i.category || ''
           )} · relevancia ${rel}</div>
             <a class="title" href="${escapeHtml(i.link)}" target="_blank" rel="noopener">${escapeHtml(
-            i.title
+            i.title_hu || i.title
           )}</a>
             <div class="sum">${escapeHtml(i.summary_hu || '')}</div>
             <div class="small"><b>Miért fontos:</b> ${escapeHtml(i.why_hu || '')}</div>

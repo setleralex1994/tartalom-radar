@@ -76,7 +76,7 @@ function buildPrompt(item, formatKey) {
     `Egy tapasztalt magyar PPC (fizetett hirdetési) szakértő vagy.\n\n` +
     `${f.instruction}\n\n` +
     `--- A FORRÁS-HÍR ---\n` +
-    `Cím: ${item.title}\n` +
+    `Cím: ${item.title_hu || item.title}\n` +
     `Forrás: ${item.source}\n` +
     `Link: ${item.link}\n` +
     `Összefoglaló: ${info}${why}\n` +
@@ -133,7 +133,7 @@ function filtered() {
     if (src && i.source !== src) return false;
     if (cutoff && dateOf(i) && dateOf(i) < cutoff) return false;
     if (q) {
-      const hay = (i.title + ' ' + (i.summary_hu || '') + ' ' + (i.snippet || '')).toLowerCase();
+      const hay = (i.title + ' ' + (i.title_hu || '') + ' ' + (i.summary_hu || '') + ' ' + (i.snippet || '')).toLowerCase();
       if (!hay.includes(q)) return false;
     }
     return true;
@@ -162,7 +162,7 @@ function render() {
         : '';
       return `<div class="card" data-idx="${idx}">
         <div class="meta">${esc(i.source)} · ${esc(i.category || '')}${d ? ' · ' + d : ''}${rel}</div>
-        <a class="title" href="${esc(i.link)}" target="_blank" rel="noopener">${esc(i.title)}</a>
+        <a class="title" href="${esc(i.link)}" target="_blank" rel="noopener">${esc(i.title_hu || i.title)}</a>
         ${info ? `<div class="body">${esc(info)}</div>` : ''}
         ${why}
         <div class="tools">
