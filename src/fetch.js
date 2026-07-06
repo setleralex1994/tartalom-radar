@@ -69,8 +69,43 @@ async function fetchScrape(source) {
   return items.slice(0, 25);
 }
 
+// Strukturalt scrape: cim-elemenkent egy tetel (pl. Google Ads Announcements).
+// Config: itemSelector, titleSelector, linkSelector?, bodySelector?, limit?
+async function fetchScrapeStructured(source) {
+  const res = await fetch(source.url, { headers: { 'User-Agent': UA } });
+  if (!res.ok) throw new Error(`HTTP ${res.status}`);
+  const $ = cheerio.load(await res.text());
+  const items = [];
+  $(source.itemSelector)
+    .slice(0, source.limit || 20)
+    .each((_, el) => {
+      const it = $(el);
+      const titleEl = it.find(source.titleSelector).first();
+      const title = titleEl.text().trim().replace(/\s+/g, ' ');
+      if (title.length < 12) return;
+      let link = source.linkSelector ? it.find(source.linkSelector).first().attr('href') || '' : '';
+      link = link ? absolute(link, source.url) : absolute('#' + (titleEl.attr('id') || ''), source.url);
+      const snippet = source.bodySelector
+        ? it.find(source.bodySelector).first().text().trim().replace(/\s+/g, ' ').slice(0, 600)
+        : '';
+      items.push({
+        guid: link,
+        source: source.name,
+        lang: source.lang,
+        category: source.category,
+        title,
+        link,
+        published: null,
+        snippet,
+      });
+    });
+  return items;
+}
+
 export async function fetchSource(source) {
-  if (source.type === 'scrape') return fetchScrape(source);
+  if (source.type === 'scrape') {
+    return source.itemSelector ? fetchScrapeStructured(source) : fetchScrape(source);
+  }
   const feed = await parser.parseURL(source.url);
   return (feed.items || []).map((it) => normalizeRss(it, source));
 }

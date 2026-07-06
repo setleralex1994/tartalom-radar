@@ -1,5 +1,18 @@
 [
   {
+    "name": "Google Ads Announcements (hivatalos)",
+    "type": "scrape",
+    "url": "https://support.google.com/google-ads/announcements/9048695?hl=en",
+    "itemSelector": ".announcement__post",
+    "titleSelector": ".announcement__post-title",
+    "linkSelector": ".announcement__post-body-read-more-link",
+    "bodySelector": ".announcement__post-body-content",
+    "limit": 15,
+    "lang": "en",
+    "category": "Google hivatalos",
+    "ppc": true
+  },
+  {
     "name": "Search Engine Land — PPC",
     "type": "rss",
     "url": "https://searchengineland.com/library/ppc/feed",
