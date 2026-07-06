@@ -12,11 +12,11 @@
       "week": "2026-W27",
       "importance": 4,
       "relevance": 4,
-      "summary_hu": "A cikk egy váratlan Google Ads célzási megközelítést mutat be, amellyel felére csökkentek az érvénytelen kattintások, még azután is, hogy a Google állítása szerint már kiszűrte a gyanús aktivitást. A taktika helyreállította a kampányok jövedelmezőségét, ott, ahol a beépített szűrés nem bizonyult elegendőnek.",
-      "why_hu": "Az érvénytelen kattintások közvetlenül elszívják a hirdetési büdzsét, így egy működő, gyakorlati kivédési módszer azonnal javíthatja a ROAS-t.",
-      "action_hu": "Nézd át a kampányaid kattintás- és forgalommintáit (pl. IP-kizárások, hely- és eszközcélzás finomítása), és teszteld a cikkben leírt célzási szűkítést egy kontrollált kampányon.",
+      "summary_hu": "A szerző egy kampánynál azt tapasztalta, hogy a Google állítása ellenére – miszerint már kiszűri a gyanús aktivitást – továbbra is magas volt az érvénytelen kattintások aránya, ami rontotta a jövedelmezőséget. A megoldás a földrajzi és megjelenítési targetálás szűkítése volt, konkrétan a location targeting beállításainál a \"presence\" (fizikailag ott tartózkodók) opció használata a \"presence or interest\" helyett, valamint a gyanús helyek és placementek kizárása. Ezzel az érvénytelen kattintások aránya körülbelül 50%-kal csökkent, és helyreállt a kampány profitabilitása. A cikk arra világít rá, hogy a Google automatikus szűrése nem old meg mindent, a hirdetőnek proaktívan kell finomítania a targetálást. A gyakorlatban ez a költségek jobb kihasználását és tisztább forgalmat jelent.",
+      "why_hu": "Az érvénytelen kattintások közvetlenül pazarolják a büdzsét, és ez a targetálási finomhangolás bármely piacon azonnal alkalmazható a hatékonyság javítására.",
+      "action_hu": "Ellenőrizd a kampányok location targeting beállítását, és váltsd \"presence\" opcióra, majd elemezd a placement- és földrajzi riportokat a gyanús forgalom kizárásához.",
       "seen_at": "2026-07-03T16:41:01.445Z",
-      "title_hu": "Google Ads célzási taktika, amely 50%-kal csökkentette az érvénytelen kattintásokat"
+      "title_hu": "Google Ads targetálási trükk, ami felére csökkentette az érvénytelen kattintásokat"
     },
     "https://searchengineland.com/?p=481453": {
       "guid": "https://searchengineland.com/?p=481453",
@@ -28,13 +28,13 @@
       "published": "2026-07-02T13:00:00.000Z",
       "snippet": "Learn how dynamic keyword insertion, comparison pages, and brand modifier keywords influence branded searches, and how to defend against them.",
       "week": "2026-W27",
-      "importance": 4,
+      "importance": 3,
       "relevance": 4,
-      "summary_hu": "A cikk bemutatja, hogyan használják a versenytársak a dynamic keyword insertion-t, az összehasonlító oldalakat és a márkamódosító kulcsszavakat, hogy a te márkás kereséseidre licitáljanak. Emellett gyakorlati védekezési taktikákat ad, például saját márkakampány futtatását és a márkanevek monitorozását.",
-      "why_hu": "A márkás forgalom védelme közvetlenül befolyásolja a konverziós költséget és a márkakeresések megtartását, ami minden fiókkezelő számára napi téma.",
-      "action_hu": "Indíts vagy erősíts meg egy dedikált branded search kampányt, és állíts be riasztást a márkanevedre licitáló versenytársak figyelésére (pl. Auction Insights ellenőrzés).",
+      "summary_hu": "A cikk bemutatja, milyen taktikákkal próbálják a versenytársak lecsípni a márkanevedre irányuló kereséseket a Google Ads-ben. A dynamic keyword insertion (DKI) révén a versenytárs hirdetései a te márkaneveddel jelenhetnek meg a szövegben, ami megtévesztő lehet a keresők számára. Emellett összehasonlító (comparison) landing oldalakat és brand modifier kulcsszavakat (pl. 'márka + alternatíva', 'márka + vélemény') használnak, hogy a márkás keresésekre is megjelenjenek. Védekezésként javasolt a saját branded kampányok fenntartása, a trademark-panaszok benyújtása a Google felé, valamint az auction insights és keresési lekérdezések rendszeres monitorozása. A saját márkás kulcsszavakra való licitálás így nemcsak forgalomvédelem, hanem a versenytársak kiszorításának eszköze is.",
+      "why_hu": "A márkás forgalom védelme közvetlenül befolyásolja a hirdető konverzióit és megakadályozza, hogy a versenytársak olcsón lehalásszák a legjobban konvertáló kereséseket.",
+      "action_hu": "Indíts vagy tarts fenn dedikált branded kampányt, és ellenőrizd az auction insights riportban, mely versenytársak jelennek meg a márkaneves keresésekre; szükség esetén nyújts be trademark-panaszt a Google-nél.",
       "seen_at": "2026-07-03T16:41:01.446Z",
-      "title_hu": "Így céloznak a versenytársak a márkás forgalmadra Google Ads-szel"
+      "title_hu": "Így licitálnak a versenytársak a márkás forgalmadra a Google Ads-ben"
     },
     "https://searchengineland.com/?p=351392": {
       "guid": "https://searchengineland.com/?p=351392",
@@ -48,11 +48,11 @@
       "week": "2026-W27",
       "importance": 1,
       "relevance": 1,
-      "summary_hu": "A Search Engine Land felhivast tett kozze, hogy az SMX Next online konferenciara lehet eloadasi temajavaslatokat (pitch) beadni SEO, PPC es AI-alapu kereses temakban. A cikk nem tartalmaz konkret szakmai vagy technikai ujdonsagot, csak a jelentkezesi lehetosegre hivja fel a figyelmet.",
-      "why_hu": "Ez egy konferencia-jelentkezesi felhivas, nincs benne kozvetlen napi hirdeteskezelest erinto szakmai tartalom.",
-      "action_hu": "Ha szeretnel eloadni, allits ossze egy temajavaslatot a szakteruleteden es add be a hataridoig; egyebkent atlephetsz rajta.",
+      "summary_hu": "A Search Engine Land felhívása arra biztatja a szakembereket, hogy nyújtsanak be előadói pályázatot (pitch) az SMX Next konferenciára. A rendezvény témái közé tartozik az SEO, a PPC és az AI-alapú keresés legfrissebb technikái és jövőbeli trendjei. A cikk kizárólag a jelentkezési lehetőséget hirdeti, konkrét szakmai vagy technikai tartalmat nem közöl. Nincs benne hirdeteskezelést érintő újdonság, platformfrissítés vagy mérési változás.",
+      "why_hu": "Ez egy konferencia-felhívás, nem hordoz konkrét, a napi hirdeteskezelést érintő szakmai értéket egy PPC-specialistának.",
+      "action_hu": "Ha érdekel a nemzetközi láthatóság, mérlegeld egy PPC-témájú előadás beadását; egyébként figyelmen kívül hagyható.",
       "seen_at": "2026-07-03T16:41:01.447Z",
-      "title_hu": "Jelentkezz eloadonak az SMX Next konferenciara!"
+      "title_hu": "Előadnál az SMX Next konferencián? Itt az ideje beadni a pályázatot!"
     },
     "https://searchengineland.com/?p=481445": {
       "guid": "https://searchengineland.com/?p=481445",
@@ -66,11 +66,11 @@
       "week": "2026-W27",
       "importance": 4,
       "relevance": 4,
-      "summary_hu": "A Google új Channel Diagnostics eszközt vezetett be a Performance Max kampányokhoz, amely segít azonosítani a hiányzó vagy elutasított asseteket. Ezek a problémás elemek korlátozhatják a kampányok teljesítményét és az egyes csatornákon való megjelenést. A funkció átláthatóbbá teszi, hogy mely assetek akadályozzák a PMax kampányok optimális működését.",
-      "why_hu": "A PMax kampányok gyakran fekete dobozként működnek, így az assetek diagnosztikája közvetlenül segíti a hibaelhárítást és a teljesítmény javítását.",
-      "action_hu": "Nyisd meg a futó Performance Max kampányaidat, és ellenőrizd a Channel Diagnostics jelentést a hiányzó vagy elutasított assetek pótlására.",
+      "summary_hu": "A Google új Channel Diagnostics eszközt vezet be a Performance Max kampányokhoz, amely segít azonosítani a hiányzó vagy elutasított asseteket, amelyek korlátozhatják a teljesítményt. Az eszköz csatornánként (pl. Search, Display, YouTube, Discover, Gmail, Maps) mutatja meg, hol futhat a kampány és mi akadályozza a megjelenést. Ez átláthatóbbá teszi a korábban jórészt fekete dobozként működő PMax működését, ahol nehéz volt megérteni, miért nem szerepel egy hirdetés bizonyos felületeken. A hirdetők így könnyebben pótolhatják a hiányzó asset-típusokat (szöveg, kép, videó) vagy javíthatják az elutasított elemeket. A gyakorlatban ez gyorsabb hibakeresést és jobb csatorna-lefedettséget tesz lehetővé.",
+      "why_hu": "A PMax egyik legnagyobb fájdalompontja az átláthatatlanság, és ez az eszköz konkrét, csatornaszintű diagnosztikát ad a napi kampánykezeléshez.",
+      "action_hu": "Nyisd meg a PMax kampányaid Channel Diagnostics nézetét, és pótold a hiányzó vagy elutasított asseteket (különösen videót és képet) a teljes csatorna-lefedettségért.",
       "seen_at": "2026-07-03T16:41:01.447Z",
-      "title_hu": "A Google Channel Diagnostics funkciót ad a Performance Maxhoz"
+      "title_hu": "A Google Channel Diagnostics funkciót ad a Performance Max kampányokhoz"
     },
     "https://searchengineland.com/?p=481424": {
       "guid": "https://searchengineland.com/?p=481424",
@@ -84,11 +84,11 @@
       "week": "2026-W27",
       "importance": 4,
       "relevance": 4,
-      "summary_hu": "A Google azt teszteli, hogy AI által generált összefoglalókat jelenít meg a keresési hirdetések alatt. Ezzel az AI nagyobb szerepet kaphat abban, ahogyan a fizetett hirdetések megjelennek a felhasználók számára, ami befolyásolhatja a hirdetési szövegek megjelenítését és a kattintási viselkedést.",
-      "why_hu": "Ha az AI-összefoglalók módosítják vagy kiegészítik a hirdetési szövegeket, az közvetlenül hat a hirdetések üzenetére, a CTR-re és a kontroll szintjére.",
-      "action_hu": "Kövesd a teszt bővülését, és készülj fel a hirdetésszövegek felülvizsgálatára, hogy azok AI-összefoglaló mellett is konzisztens és pontos üzenetet közvetítsenek.",
+      "summary_hu": "A Google egy új tesztet futtat, amelyben AI-generált összefoglalók jelennek meg a keresési hirdetések alatt. Ezek a rövid szövegek a hirdetés tartalma alapján automatikusan készülnek, így az AI nagyobb szerepet kap abban, ahogyan a fizetett hirdetéseket megjelenítik a felhasználóknak. Ez a lépés illeszkedik a Google szélesebb, AI-vezérelt keresési irányvonalába (pl. AI Overviews), és felveti a kérdést, mennyire tudja a hirdető kontrollálni, milyen üzenet jelenik meg a hirdetése mellett. A funkció jelenleg tesztfázisban van, így korlátozott a láthatósága és a részletei sem véglegesek. Hosszabb távon befolyásolhatja a hirdetésszövegek megírását és a CTR-t.",
+      "why_hu": "Ha az AI módosítja vagy kiegészíti a hirdetés megjelenését, az közvetlenül hat a hirdetésszövegek átkattintási arányára és a hirdető üzenetkontrolljára.",
+      "action_hu": "Kövesd a teszt terjedését a fiókjaidban, és készíts jól strukturált, egyértelmű hirdetésszövegeket, amelyekből az AI pontos összefoglalót tud generálni.",
       "seen_at": "2026-07-03T16:41:01.447Z",
-      "title_hu": "A Google AI-alapú összefoglalókat tesztel a keresési hirdetéseknél"
+      "title_hu": "A Google mesterséges intelligenciával generált összefoglalókat tesztel a keresési hirdetéseknél"
     },
     "https://searchengineland.com/?p=481332": {
       "guid": "https://searchengineland.com/?p=481332",
@@ -102,11 +102,11 @@
       "week": "2026-W27",
       "importance": 4,
       "relevance": 4,
-      "summary_hu": "A cikk azt vizsgálja, hogy a fiók- és kampányarchitektúra hogyan alapozza meg a hatékony automatizációt a Google Adsben. Kiemeli, hogy a jól felépített struktúra erősíti a jelzéseket (signals) az algoritmusok felé, csökkenti a kampányok közötti átfedést, és így jobb eredményekhez vezet. Gyakorlati megközelítést ad a fiók logikus rendezésére.",
-      "why_hu": "A kampánystruktúra közvetlenül befolyásolja a smart bidding és Performance Max teljesítményét, ezért a napi hirdeteskezelés alapját érinti.",
-      "action_hu": "Ellenőrizd a fiókjaidban a kampányok közötti átfedéseket (kulcsszavak, közönségek, termékfeedek), és konszolidáld a struktúrát, hogy tisztább konverziós jelzéseket adj az automatizált licitálásnak.",
+      "summary_hu": "A cikk azt jarja korul, hogy az automatizacio (Smart Bidding, Performance Max) csak jol felepitett fiokstrukturaval mukodik igazan hatekonyan. A lenyeg, hogy a kampanyokat es hirdetescsoportokat ugy erdemes szervezni, hogy erositsuk a konverzios jelzeseket es csokkentsuk az atfedeseket a kampanyok kozott. Az atfedo kulcsszavak vagy celzasi teruletek szethuzzak az adatot es rontjak az algoritmus tanulasat. A javaslat az adat- es jelzeskoncentracio: kevesebb, de erosebb jelet kapo egyseg jobb bid strategy-teljesitmenyt hoz. Gyakorlatban ez a fiokarchitektura felulvizsgalatat es a felesleges szegmentacio megszunteteset jelenti.",
+      "why_hu": "A helyes kampanystruktura kozvetlenul befolyasolja az automatizalt licitalas es a PMax eredmenyesseget, ami a napi hirdeteskezeles alapja.",
+      "action_hu": "Vizsgald at a fiokban a kampanyok kozotti kulcsszo- es celzasi atfedeseket, es vonj ossze tul kis, keves konverziojelet kapo egysegeket az adatkoncentracio erdekeben.",
       "seen_at": "2026-07-03T16:41:01.447Z",
-      "title_hu": "Hogyan befolyásolja a kampánystruktúra a Google Ads teljesítményét"
+      "title_hu": "Hogyan befolyasolja a kampanystruktura a Google Ads teljesitmenyet"
     },
     "https://searchengineland.com/?p=481333": {
       "guid": "https://searchengineland.com/?p=481333",
@@ -118,11 +118,11 @@
       "published": "2026-06-30T16:38:25.000Z",
       "snippet": "Microsoft is expanding PMax testing with two new experiment types that help measure campaign impact and validate upgrades.",
       "week": "2026-W27",
-      "importance": 4,
+      "importance": 3,
       "relevance": 4,
-      "summary_hu": "A Microsoft Ads két új kísérlettípust vezet be a Performance Max kampányokhoz, amelyek segítenek mérni a kampányok tényleges hatását és validálni a fejlesztéseket, frissítéseket. Ezzel a hirdetők A/B-jellegű teszteléssel igazolhatják a PMax teljesítményét más kampánytípusokhoz vagy beállításokhoz képest.",
-      "why_hu": "A Microsoft Ads-en hirdető szakembereknek így pontosabb, adatalapú döntéseket hozhatnak a PMax bevezetéséről és skálázásáról.",
-      "action_hu": "Indíts egy kísérletet a Microsoft Ads felületén, amelyben a PMax kampányt egy meglévő kampánytípussal veted össze, mielőtt tovább skáláznád a büdzsét.",
+      "summary_hu": "A Microsoft Advertising két új kísérlettípust vezet be a Performance Max kampányokhoz, amelyek segítenek mérni a kampányok tényleges hatását és validálni a fejlesztéseket. Az egyik típus a kampány inkrementális hatását méri (lift test jelleggel), a másik pedig a beállítási vagy stratégiai módosítások (upgrade-ek) eredményét igazolja kontrollcsoportos összehasonlítással. Ezzel a hirdetők adatalapon dönthetnek arról, hogy egy PMax-változtatás valóban javít-e a teljesítményen, mielőtt teljes körűen bevezetnék. A funkció közelíti a Microsoft PMax tesztelési lehetőségeit a Google Ads-ben már megszokott experiment eszközökhöz. A gyakorlatban ez pontosabb ROAS- és konverzió-alapú döntéseket tesz lehetővé a Microsoft ökoszisztémán belül.",
+      "why_hu": "A Microsoft Ads PMax kampányokat futtatók így végre kontrollált kísérletekkel tudják bizonyítani a változtatások valós hatását, találgatás helyett.",
+      "action_hu": "Ellenőrizd a Microsoft Advertising fiókodban, elérhetők-e már az új PMax kísérlettípusok, és indíts egy tesztet egy tervezett beállításmódosítás validálására.",
       "seen_at": "2026-07-03T16:41:01.448Z",
       "title_hu": "A Microsoft új kísérlettípusokkal bővíti a Performance Max tesztelését"
     },
@@ -136,13 +136,13 @@
       "published": "2026-06-30T16:00:44.000Z",
       "snippet": "Google Ads is rolling out a redesigned All Campaigns selector with a new hierarchy view and search to simplify campaign navigation.",
       "week": "2026-W27",
-      "importance": 3,
+      "importance": 2,
       "relevance": 3,
-      "summary_hu": "A Google Ads egy újratervezett Összes kampány (All Campaigns) választót vezet be, amely új hierarchikus nézetet és keresési funkciót kap. A cél a kampányok közötti navigáció egyszerűsítése, különösen összetettebb fiókstruktúráknál.",
-      "why_hu": "A napi kampánykezelés gyorsabbá és átláthatóbbá válhat, főleg sok kampányt kezelő fiókoknál.",
-      "action_hu": "A frissítés megjelenése után próbáld ki az új hierarchia- és keresőnézetet, és igazítsd hozzá a szokásos navigációs munkafolyamataidat.",
+      "summary_hu": "A Google Ads egy újratervezett \"All Campaigns\" (Összes kampány) választót vezet be a kampányok közötti navigáció egyszerűsítésére. Az újdonság egy hierarchikus nézetet kínál, amely áttekinthetőbben rendezi el a fiókok és kampányok szerkezetét. Emellett beépített keresés is megjelenik, amivel gyorsabban lehet megtalálni egy adott kampányt vagy fiókot. A változás elsősorban a felhasználói felület kényelmét érinti, nem a hirdetéskezelés logikáját vagy a licitálást. Több fiókot vagy sok kampányt kezelő hirdetőknek gyorsíthatja a mindennapi munkát.",
+      "why_hu": "Napi szintű felületi változás, amely a kampányok közötti navigációt gyorsíthatja, főleg sok kampányt vagy fiókot kezelőknek.",
+      "action_hu": "Nézd meg a Google Ads felületen az új All Campaigns választót, és próbáld ki a hierarchia-nézetet és keresőt a gyorsabb navigációhoz.",
       "seen_at": "2026-07-03T16:41:01.448Z",
-      "title_hu": "A Google Ads áttervezi az Összes kampány választót"
+      "title_hu": "A Google Ads átalakítja az összes kampányt megjelenítő választót"
     },
     "https://searchengineland.com/?p=481322": {
       "guid": "https://searchengineland.com/?p=481322",
@@ -154,13 +154,13 @@
       "published": "2026-06-30T15:43:12.000Z",
       "snippet": "Google updated its age estimation ads policy and changes what they now restrict ads for with shocking content not making the cut.",
       "week": "2026-W27",
-      "importance": 3,
-      "relevance": 3,
-      "summary_hu": "A Google frissítette és átnevezte az életkor becslésére vonatkozó hirdetési szabályzatát, ahogy világszerte terjednek a kötelező életkor-ellenőrzési előírások. A módosítás megváltoztatja, hogy mely tartalmakra vonatkoznak hirdetési korlátozások, például a sokkoló tartalom kikerült a korlátozott kategóriák közül.",
-      "why_hu": "A hirdetési szabályzat változása befolyásolhatja bizonyos kampányok jóváhagyását és a célközönség korhoz kötött elérését, ezért érdemes tisztában lenni vele.",
-      "action_hu": "Nézd át a Google frissített korbecslési/életkor-ellenőrzési szabályzatát, és ellenőrizd, hogy érint-e valamelyik futó kampányt vagy célzási beállítást.",
+      "importance": 2,
+      "relevance": 2,
+      "summary_hu": "A Google atnevezte a korabbi \"age estimation\" hirdetesi szabalyzatat, es modositotta, hogy pontosan milyen tartalmakra vonatkoznak az eletkor alapu korlatozasok. A valtozas resze a globalisan terjedo age assurance (eletkor-ellenorzesi) kovetelmenyeknek, amelyek egyre tobb piacon kotelezove valnak. A frissites nyoman a sokkolonak minositett (shocking) tartalom mar nem tartozik az adott korlatozasi kategoriaba. A modositas fokent a felnottkori vagy erzekeny temaju hirdeteseket kezelo hirdetoket erinti, akiknek a targetalasa es engedelyezese valtozhat. Gyakorlatban erdemes atnezni az erintett kampanyokat, hogy megfelelnek-e az uj besorolasnak.",
+      "why_hu": "A szabalyzat-valtozas erintheti az erzekeny vagy korhoz kotott tartalmu hirdetesek engedelyezeset es futasat, de a legtobb altalanos hirdeto szamara kevesse jelentos.",
+      "action_hu": "Ellenorizd, hogy futtatsz-e korhoz kotott vagy erzekeny temaju hirdeteseket, es nezd at azok szabalyzati megfeleleset az uj besorolas szerint.",
       "seen_at": "2026-07-03T16:41:01.448Z",
-      "title_hu": "A Google átnevezi a korbecslési hirdetési szabályzatát a globális életkor-ellenőrzés bővülésével"
+      "title_hu": "A Google atnevezi az eletkorbecslesi hirdetesi szabalyzatot a globalis eletkor-ellenorzes bovulesevel"
     },
     "https://searchengineland.com/?p=481320": {
       "guid": "https://searchengineland.com/?p=481320",
@@ -174,11 +174,11 @@
       "week": "2026-W27",
       "importance": 3,
       "relevance": 3,
-      "summary_hu": "A Google új YouTube-mérési funkciókat vezet be, amelyek segítenek a hirdetőknek jobban összekapcsolni a márkakampányokat a márkanevekre irányuló keresési aktivitással. Ezzel a felső tölcsérben futó brand videokampányok hatása pontosabban mérhetővé válik a branded search felfutásán keresztül.",
-      "why_hu": "A YouTube brand kampányok mérése régóta gyenge pont, ez a funkció segít bizonyítani a felső tölcsér-tevékenység hatását a keresésre.",
-      "action_hu": "Ellenőrizd, elérhető-e már a fiókodban az új YouTube brand mérési funkció, és futó videokampányoknál kezdd el követni a branded search elmozdulást a kampányidőszakokhoz igazítva.",
+      "summary_hu": "A Google új mérési funkciókat ad a YouTube-kampányokhoz, amelyek segítenek összekapcsolni a márkaépítő videóhirdetéseket a márkázott keresési aktivitással. A cél, hogy a hirdetők jobban lássák, miként befolyásolja a YouTube-on futó brand kampány a márkanevre irányuló keresések számát. Ezzel mérhetőbbé válik a felső tölcsérszakasz (awareness) hatása a keresési kereslet felfutására. A funkció áthidalja a klasszikus brand lift és a tényleges keresési viselkedés közötti szakadékot. Gyakorlati szempontból a YouTube brand kampányok ROI-ját és a márkakeresésre gyakorolt hatását lehet vele alátámasztani riportokban.",
+      "why_hu": "A YouTube brand kampányok hatásának mérése eddig nehézkes volt, ez az eszköz segít igazolni azok hozzájárulását a márkázott kereséshez.",
+      "action_hu": "Nézd meg a Google Adsben az elérhető új YouTube brand mérési riportokat, és kösd össze a márkakampány adatait a branded search forgalom alakulásával.",
       "seen_at": "2026-07-03T16:41:01.448Z",
-      "title_hu": "A Google új YouTube márkakampány-mérési eszközöket vezet be"
+      "title_hu": "A Google új YouTube-mérési eszközöket vezet be márkakampányokhoz"
     },
     "https://www.searchenginejournal.com/ctr-is-sky-high-in-2026-that-doesnt-mean-your-ads-are-working/577744/": {
       "guid": "https://www.searchenginejournal.com/ctr-is-sky-high-in-2026-that-doesnt-mean-your-ads-are-working/577744/",
@@ -192,11 +192,11 @@
       "week": "2026-W27",
       "importance": 3,
       "relevance": 4,
-      "summary_hu": "A cikk arra hívja fel a figyelmet, hogy az automatizált licitálás és az AI-alapú optimalizálás átformálja a hagyományos metrikákat, így a magas átkattintási arány (CTR) önmagában már nem garantálja a kampány sikerét. A hangsúlyt az üzleti eredményt tükröző mérőszámokra (konverzió, ROAS, bevétel) érdemes helyezni a felszínes engagement-metrikák helyett.",
-      "why_hu": "A napi kampányoptimalizálásban félrevezető lehet a CTR-re optimalizálni, ha a valós cél a konverzió és a megtérülés.",
-      "action_hu": "Vizsgáld felül a kampányértékelési KPI-jaidat: a CTR helyett a konverziós értékre és ROAS-ra állítsd a fókuszt, és ellenőrizd a konverziókövetés pontosságát.",
+      "summary_hu": "A cikk arra figyelmeztet, hogy az automatizált licitálás és az AI-alapú optimalizálás korában a magas átkattintási arány (CTR) önmagában már nem megbízható sikermutató. A rendszerek sokszor olyan felhasználóknak jelenítik meg a hirdetést, akik szívesen kattintanak, de nem konvertálnak, így felfelé torzul a CTR anélkül, hogy nőne az üzleti eredmény. A hangsúlyt a lejjebb lévő tölcsérmetrikákra kell helyezni: konverziós arány, CPA, ROAS és a tényleges bevétel. A cikk azt javasolja, hogy a CTR-t inkább diagnosztikai jelként kezeljük (üzenet- és relevanciateszt), ne pedig végső KPI-ként. A gyakorlatban ez azt jelenti, hogy a kampányértékelést és az optimalizálási döntéseket értékalapú, konverzió-orientált célok mentén kell felépíteni.",
+      "why_hu": "A napi kampányértékelésben sokan még mindig a CTR-re optimalizálnak, ami az automatizált licitálás mellett félrevezető döntésekhez vezethet.",
+      "action_hu": "Állítsd át a kampányriportok és a bid strategy fókuszát CTR-ről a konverziós arányra, CPA-ra és ROAS-ra, és ellenőrizd, hogy a magas CTR-ű kampányok valóban hoznak-e bevételt.",
       "seen_at": "2026-07-03T16:41:01.449Z",
-      "title_hu": "Miért nem jelenti a magas CTR, hogy a hirdetéseid tényleg működnek"
+      "title_hu": "Miért nem jelenti a magas CTR, hogy a hirdetéseid valóban működnek"
     },
     "https://ppchero.com/?p=31086": {
       "guid": "https://ppchero.com/?p=31086",
@@ -210,11 +210,11 @@
       "week": "2026-W27",
       "importance": 4,
       "relevance": 4,
-      "summary_hu": "A cikk arra hívja fel a figyelmet, hogy a Smart Bidding teljesítménye közvetlenül függ a beérkező adatok minőségétől és mennyiségétől. A cookie-korlátozások és a jelvesztés miatt egyre fontosabb az elveszett konverziós szignálok visszaszerzése, amit a szerző a 'Data Strength' fogalommal ír le. Konkrét megoldásként az enhanced conversions, a first-party adatok és a szerveroldali mérés bevezetését emeli ki.",
-      "why_hu": "A licitálási automatizmusok hatékonysága a mérési minőségen áll vagy bukik, így a konverziós adatpótlás közvetlenül befolyásolja a kampányeredményeket.",
-      "action_hu": "Ellenőrizd és aktiváld az Enhanced Conversions-t, valamint vezess be first-party/szerveroldali mérést a konverziós szignálok pótlására a Smart Bidding kampányokban.",
+      "summary_hu": "A cikk azt hangsúlyozza, hogy a Smart Bidding és a Google automatizált licitálási algoritmusai teljes mértékben a hozzájuk juttatott adatok minőségén állnak vagy buknak. A privacy-változások, sütikorlátozások és a böngészők nyomkövetés-blokkolása miatt sok konverziós jel elveszik, ami rontja az algoritmus teljesítményét. A megoldás az adaterő (Data Strength) növelése: server-side tracking, Enhanced Conversions, Consent Mode és a first-party adatok kihasználása. Ezekkel visszanyerhetők az elveszett konverziós szignálok, így az AI pontosabban tud licitálni. Gyakorlatban ez azt jelenti, hogy a mérési infrastruktúra fejlesztése ma legalább annyira fontos, mint maga a kampányoptimalizálás.",
+      "why_hu": "Az EU-ban a szigorú GDPR és consent-szabályok miatt különösen sok konverziós jel vész el, ami közvetlenül rontja a Smart Bidding hatékonyságát.",
+      "action_hu": "Ellenőrizd és állítsd be az Enhanced Conversions és a Consent Mode v2 megfelelő működését, valamint fontold meg a server-side tracking bevezetését a konverziós jelek visszanyerésére.",
       "seen_at": "2026-07-03T16:41:01.449Z",
-      "title_hu": "A Google AI-ja csak annyira jó, amennyire jók az adataid"
+      "title_hu": "A Google AI-ja csak annyit ér, amennyit az adataid megengednek"
     },
     "https://ppchero.com/?p=31078": {
       "guid": "https://ppchero.com/?p=31078",
@@ -228,11 +228,11 @@
       "week": "2026-W27",
       "importance": 2,
       "relevance": 2,
-      "summary_hu": "A cikk kezdőknek szóló útmutató a Google Ads-fiók elindításához, a szerző tapasztalataira építve, aki havi néhány száz fonttól ötmillió font feletti költésű fiókokig dolgozott. Kiemeli, hogy a platform és a matematika ugyanaz méretfüggetlenül, és a kezdők általában ugyanazt a néhány hibát ismétlik. Alapszintű, bevezető jellegű tartalom, nem tartalmaz új funkciót vagy technikai újdonságot.",
-      "why_hu": "Tapasztalt PPC szakértőnek kevés újdonságot nyújt, mert kezdőknek szóló alapozó anyag.",
-      "action_hu": "Legfeljebb onboarding vagy junior kollégák betanításához használd fel referenciaként.",
+      "summary_hu": "A cikk kezdőknek szóló bevezető útmutató a Google Ads-fiók elindításához, tapasztalt kezelő szemszögéből, aki havi néhány száz fontos és több millió fontos fiókokat is menedzselt. A szerző szerint a platform és a matematika ugyanaz méretaránytól függetlenül, a kezdők hibái pedig szinte mindig ugyanaz a néhány, ismétlődő probléma. A hangsúly az alapok helyes felállításán van: fiókstruktúra, kampánycélok és a tipikus kezdő buktatók elkerülése. Tapasztalt szakembernek nem hoz új technikai információt vagy platformfrissítést.",
+      "why_hu": "Alapszintű, kezdőknek szóló tartalom, amely gyakorló PPC-szakembernek nem nyújt érdemi új szakmai értéket.",
+      "action_hu": "Legfeljebb junior kollégák vagy új ügyfelek onboardingjához oszd meg, egyébként kihagyható.",
       "seen_at": "2026-07-03T16:41:01.449Z",
-      "title_hu": "Az első Google Ads-fiókod: hogyan indulj el"
+      "title_hu": "Az első Google Ads-fiókod: hogyan kezdj bele"
     },
     "https://ppchero.com/?p=31071": {
       "guid": "https://ppchero.com/?p=31071",
@@ -246,11 +246,11 @@
       "week": "2026-W27",
       "importance": 4,
       "relevance": 4,
-      "summary_hu": "A Meta uj AI Connectors funkciojaval az AI-eszkozok mar nem csak elemzesre alkalmasak a kampanyok mellett, hanem kozvetlenul csatlakozhatnak a Meta hirdetesi rendszerehez. Ez azt jelenti, hogy AI-alapu eszkozokkel lekerdezheto a teljesitmeny es potencialisan modositasok is vegrehajthatok az Ads Manageren kivulrol. A cikk szerint ez megtori a korabbi mintat, ahol minden munka az Ads Manageren belul zajlott.",
-      "why_hu": "A napi Meta hirdeteskezeles automatizalhatova es AI-vezereltebbe valhat, ami atalakithatja a specialistak munkafolyamatait.",
-      "action_hu": "Nezd meg a Meta AI Connectors dokumentaciojat, es teszteld egy kampanyon, hogyan integralhato az AI-alapu lekerdezes es optimalizalas a workflow-dba.",
+      "summary_hu": "A Meta uj AI Connectors funkcioja megtori azt a mintat, hogy a paid social munka kizarolag az Ads Manageren belul zajlott, es az AI eszkozok csak kulso, ertelmezo szerepet toltottek be. Mostantol az AI kozvetlenul csatlakozhat a kampanyokhoz, igy nem csak elemzeshez, hanem tenyleges beavatkozashoz is hasznalhato. Ez azt jelenti, hogy az AI le tud kerdezni teljesitmenyadatokat es akar modositasokat is vegre tud hajtani a kampanyokban a felhaszalo helyett. A cikk arra figyelmeztet, hogy ez alapjaiban valtoztatja meg a hirdeteskezelo napi workflowjat es a kontroll kerdeset. A hirdetoknek at kell gondolniuk, mennyi donteshozatalt engednek at az automatizacionak.",
+      "why_hu": "Az AI kozvetlen kampany-hozzaferese alapjaiban valtoztathatja meg a napi paid social munkafolyamatot es a kontroll megoszlasat ember es gep kozott.",
+      "action_hu": "Teszteld az AI Connectors funkciot egy alacsony koltsegveteesu kampanyon, es allits fel egyertelmu jogosultsagi/felugyeleti szabalyokat, mielott elesben hasznalnad.",
       "seen_at": "2026-07-03T16:41:01.449Z",
-      "title_hu": "Mit valtoztat a Meta AI Connectors a paid social kezelesen"
+      "title_hu": "Mit valtoztat a Meta AI Connectors a fizetett social kezeleseben"
     },
     "https://blog.google/products/ads-commerce/youtube-brand-campaign-updates/": {
       "guid": "https://blog.google/products/ads-commerce/youtube-brand-campaign-updates/",
@@ -264,11 +264,11 @@
       "week": "2026-W27",
       "importance": 3,
       "relevance": 3,
-      "summary_hu": "A Google új méréseket és funkciókat vezet be, amelyekkel a YouTube brand kampányok jobban bizonyíthatják, hogy valóban hozzájárulnak a hirdetők számára fontos üzleti eredményekhez. A frissítés a márkaépítő videókampányok teljesítményének átláthatóbb kimutatását célozza, segítve a brand awareness és a konkrét konverziós hatás összekapcsolását.",
-      "why_hu": "A YouTube brand kampányok mérhetősége eddig gyenge pont volt, így az új insightok segítenek igazolni a felső tölcséres költések megtérülését.",
-      "action_hu": "Nézd át a YouTube kampányaid mérési beállításait, és teszteld az új brand insight riportokat egy futó márkaépítő kampányon.",
+      "summary_hu": "A Google új mérési és riportolási funkciókat vezet be a YouTube márkaépítő (brand) kampányokhoz, hogy jobban kimutatható legyen a hirdetők számára fontos üzleti hatás. A frissítések célja, hogy a felső tölcsérszakaszos videókampányok eredményessége konkrét metrikákkal legyen alátámasztható, ne csak elérésre és megtekintésre korlátozódjon. A bővítések a brand lift jellegű mérésekre és a márkaépítés konverziós hatásának kimutatására fókuszálnak. Ez segíthet igazolni a YouTube brand kampányok hozzájárulását a teljes marketing-tölcsérhez. Gyakorlatban a hirdetők pontosabb adatokkal érvelhetnek a videós költések mellett, és jobban optimalizálhatják a márkaépítő kampányokat.",
+      "why_hu": "Aki YouTube-on futtat márkaépítő videókampányokat, jobb mérési eszközökkel tudja igazolni és optimalizálni azok hatását.",
+      "action_hu": "Nézd át a YouTube brand kampányaid riportjait az új mérési mutatók után, és építsd be őket a felső tölcsérszakasz teljesítményének kimutatásába.",
       "seen_at": "2026-07-03T16:41:01.450Z",
-      "title_hu": "Mélyebb betekintés a YouTube brandkampányok eredményeibe"
+      "title_hu": "Mélyebb betekintés a YouTube márkaépítő kampányok teljesítményébe"
     },
     "https://support.google.com/google-ads/answer/17100114": {
       "guid": "https://support.google.com/google-ads/answer/17100114",
@@ -281,10 +281,10 @@
       "snippet": "At Google Marketing Live 2026, we announced powerful new AI innovations built to help you create, capture, and convert demand, more efficiently than ever before. Visit Accelerate with Google to access exclusive session content, dive into all the product announcements, and get started with growth tools that can help you connect with customers and deliver valuable outcomes for your business.",
       "week": "2026-W28",
       "importance": 4,
-      "relevance": 4,
-      "summary_hu": "A Google Marketing Live 2026 esemenyen uj AI-alapu funkciokat mutatott be, amelyek a kereslet letrehozasat, megragadasat es konvertalasat segitik hatekonyabban. Az Accelerate with Google feluleten elerhetok a session-tartalmak, a reszletes termekbejelentesek es a novekedest tamogato eszkozok.",
-      "why_hu": "A GML bejelentesek jellemzoen meghatarozzak a Google Ads kovetkezo evi funkcioit es iranyat, amelyek kozvetlenul befolyasoljak a napi kampanykezelest.",
-      "action_hu": "Nezd at az Accelerate with Google oldalon a termekbejelentesek listajat, es azonositsd, mely uj AI-funkciokat erdemes tesztelni a sajat fiokokban.",
+      "relevance": 3,
+      "summary_hu": "A Google a Google Marketing Live 2026 esemenyen uj AI-alapu innovaciokat mutatott be, amelyek a keresletgeneralas, -megragadas es -konverzio hatekonysagat celozzak. Az Accelerate with Google feluleten elerhetok a kizarolagos eloadasok, a teljes termekbejelentesek es a novekedest tamogato eszkozok. A bejegyzes maga inkabb gyujto-hivatkozas, konkret funkcioleirasok nelkul, tovabbi tartalomra iranyitva. A reszletes ujdonsagok az Accelerate with Google oldalon nezhetok meg. Erdemes a konkret termekfrissiteseket kulon atnezni, mert ez a bejegyzes csak attekintest ad, gyakorlati beallitasi utmutatot nem tartalmaz.",
+      "why_hu": "A GML a Google Ads legfontosabb evi bejelentesi esemenye, ahol a kovetkezo idoszak funkcioi es AI-fejlesztesei debutalnak.",
+      "action_hu": "Nyisd meg az Accelerate with Google oldalt es nezd at a konkret termekbejelenteseket, kulonosen az AI- es Performance Max-fejleszteseket, hogy melyik erinti a kampanyaidat.",
       "seen_at": "2026-07-06T13:25:40.263Z",
       "title_hu": "Ezt jelentette be a Google a Google Marketing Live 2026 rendezvenyen"
     },
@@ -298,13 +298,13 @@
       "published": null,
       "snippet": "In 2025, we accelerated your growth by launching powerful new AI innovations in Google Ads, designed to help your marketing perform like never before. With cutting-edge measurement solutions like Meridian, powerful advertising tools like AI Max, and agentic solutions for streamlined workflows, we built and shipped game-changing solutions that allowed you to reach consumers from discovery to decisions. Let’s dive deeper into the year’s highlights and explore how they can help inspire your audience at every step of their journey. Drive discoveries and decisions with a new era of Search Inspire y",
       "week": "2026-W28",
-      "importance": 4,
-      "relevance": 4,
-      "summary_hu": "A Google összefoglalja a 2025-ben bevezetett fő AI-alapú újításokat a Google Ads-ben, köztük a Meridian mérési megoldást, az AI Max hirdetési eszközt és az agentic (automatizált munkafolyamat) megoldásokat. A cikk végigveszi, hogyan segítik ezek a fejlesztések a felhasználók elérését a felfedezéstől a döntésig, kiemelve a Search és az inspiráció-alapú kampányok szerepét.",
-      "why_hu": "Az év AI-újításainak áttekintése segít eldönteni, mely funkciókat érdemes 2026-ban a kampányokba integrálni.",
-      "action_hu": "Nézd át a felsorolt eszközöket (AI Max, Meridian) és teszteld a legrelevánsabbat egy pilot kampányban a saját fiókodban.",
+      "importance": 3,
+      "relevance": 3,
+      "summary_hu": "A Google éves összefoglalója a 2025-ben bevezetett fő Google Ads fejlesztéseket veszi sorra, elsősorban AI-alapú újdonságokra fókuszálva. A Meridian nevű mérési megoldás (marketing mix modeling) segít a kampányok hozzájárulásának elemzésében a cookie-mentes környezetben. Az AI Max for Search kiterjeszti a keresési kampányok automatizálását, szélesebb egyezést és AI-vezérelt kreatívokat kínálva. Emellett úgynevezett agentic megoldások jelentek meg a munkafolyamatok egyszerűsítésére, valamint a keresési élményt is átalakítják (AI Overviews, AI Mode). A cikk inkább összefoglaló/marketing jellegű, nem tartalmaz új, konkrét beállítási lépéseket.",
+      "why_hu": "Áttekintést ad az év legfontosabb Google Ads AI-fejlesztéseiről, amelyek befolyásolják a kampánystruktúrát és a mérést.",
+      "action_hu": "Nézd át az AI Max for Search és a Meridian dokumentációját, és mérlegeld, mely 2025-ös funkciók illeszthetők be a jelenlegi kampányaidba.",
       "seen_at": "2026-07-06T13:25:40.264Z",
-      "title_hu": "A Google Ads 2025-os év legfontosabb újításai"
+      "title_hu": "A 2025-ös év kiemelt Google Ads újdonságai"
     },
     "https://support.google.com/google-ads/answer/16719772": {
       "guid": "https://support.google.com/google-ads/answer/16719772",
@@ -318,11 +318,11 @@
       "week": "2026-W28",
       "importance": 4,
       "relevance": 4,
-      "summary_hu": "A Google Ads jelentős frissítéseket vezetett be az incrementality experiments (inkrementalitás-tesztek) eszköztárában, hogy a hirdetők egyszerűbben mérhessék hirdetéseik valódi, ok-okozati hatását. A cél annak kimutatása, mi történik ténylegesen a marketing hatására, és mi következett volna be enélkül is, így pontosabb ROI-kép és médiamérés érhető el.",
-      "why_hu": "Az inkrementalitás mérése segít bizonyítani a hirdetési költés valódi értékét és jobban optimalizálni a büdzsét a látszólagos konverziók helyett a tényleges hatás alapján.",
-      "action_hu": "Indíts egy incrementality experimentet a Google Ads-ben egy kiemelt kampányra, hogy felmérd a tényleges inkrementális konverziós hatást és ehhez igazítsd a költségvetést.",
+      "summary_hu": "A Google Ads jelentős frissítéseket vezetett be az incrementality (növekményi hatás) kísérletekhez, hogy könnyebben mérhető legyen a hirdetések valós, oksági hatása. Az incrementality lényege annak megértése, hogy mi történik konkrétan a marketing miatt, és mi nem következett volna be egyébként — szemben a hagyományos metrikákkal, amelyek csak részleges képet adnak. A frissítések célja, hogy minden hirdető, ne csak a nagyok, könnyebben hozzáférhessenek ezekhez a teszteléshez. A gyakorlatban ez segít bizonyítani a hirdetési költések tényleges üzleti értékét és pontosítani a ROI-t. A Google szerint a marketingelemzés valós értékének igazolása a hirdetők kiemelt prioritása.",
+      "why_hu": "A növekményi tesztelés a valós hirdetési hatás és a ROI hiteles bizonyításához nyújt eszközt, ami közvetlenül érinti a büdzsé-döntéseket.",
+      "action_hu": "Nézd át a Google Ads incrementality-kísérletek beállítási lehetőségeit, és indíts egy tesztet egy nagyobb kampányon a valós inkrementális hatás mérésére.",
       "seen_at": "2026-07-06T13:25:40.264Z",
-      "title_hu": "Pontosabb médiamérés és ROI-tisztaság az incrementality-tesztelés fejlesztéseivel"
+      "title_hu": "Pontosabb médiamérés és ROI-átláthatóság az incrementality tesztek fejlesztéseivel"
     },
     "https://support.google.com/google-ads/answer/16713852": {
       "guid": "https://support.google.com/google-ads/answer/16713852",
@@ -334,11 +334,11 @@
       "published": null,
       "snippet": "Google is launching new brand suitability controls across additional ad placement environments to enhance how you find the right fit for your product or brand. Inventory types are now available on the YouTube Home Feed, the YouTube Watch Next Feed, and Discover, establishing a consistent brand suitability experience across YouTube, Discover, and Google Display Network. Excluded content themes are also available now for Discover, which will launch on the YouTube Home Feed and Watch Next Feed later this year. Learn more about inventory types and excluded content themes here. What This Means for ",
       "week": "2026-W28",
-      "importance": 4,
+      "importance": 3,
       "relevance": 4,
-      "summary_hu": "A Google kiterjeszti a brand suitability vezérlőket további hirdetési helyekre: az inventory type-ok mostantól elérhetők a YouTube Home Feedben, a YouTube Watch Next Feedben és a Discoverben, egységes márkabiztonsági élményt teremtve a YouTube, a Discover és a Google Display Network között. A kizárt tartalmi témák (excluded content themes) már a Discoverben is elérhetők, a YouTube Home és Watch Next feedben pedig az év későbbi részében indulnak.",
-      "why_hu": "A bővített brand suitability kontrollokkal pontosabban szabályozható, milyen környezetben jelennek meg a hirdetések, ami közvetlenül befolyásolja a márkabiztonságot és a placement minőségét.",
-      "action_hu": "Nézd át a YouTube- és Discover-kampányok inventory type és excluded content themes beállításait, és állítsd be a márkához illő szintet a nem kívánt placementek kizárásához.",
+      "summary_hu": "A Google kiterjeszti a brand suitability (márkabiztonsági) vezérlőket új hirdetési felületekre, hogy egységesebb legyen a YouTube, a Discover és a Google Display Network közötti tapasztalat. Az inventory types (leltártípusok) beállítás mostantól elérhető a YouTube Home Feed, a YouTube Watch Next Feed és a Discover felületeken. Az excluded content themes (kizárt tartalmi témák) opció már a Discoverben is használható, a YouTube Home Feed és Watch Next Feed felületeken pedig az év későbbi részében indul. Ezekkel a hirdetők finomabban szabályozhatják, milyen tartalmi környezetben jelenhetnek meg a hirdetéseik. A cél a márkához illő megjelenés biztosítása a bővülő YouTube- és Discover-elhelyezéseken.",
+      "why_hu": "A finomabb márkabiztonsági vezérlés segít elkerülni a márkához nem illő környezeteket a YouTube és Discover kampányokban, ami közvetlenül érinti a videó- és feed-hirdetéseket.",
+      "action_hu": "Nézd át a YouTube és Discover kampányaid inventory types és excluded content themes beállításait, és állítsd be azokat a márkához illeszkedő megjelenés érdekében.",
       "seen_at": "2026-07-06T13:25:40.265Z",
       "title_hu": "Új brand suitability beállítások a YouTube feedekben és a Discoverben"
     },
@@ -352,13 +352,13 @@
       "published": null,
       "snippet": "This year, advertiser feedback has fueled significant improvements to Performance Max (PMax) campaigns, and we're continuing to help you reach your audience and gain more visibility with two key updates. Drive more in-store sales with Ads on Waze We're making it easier for you to reach customers on the go by adding Waze ads inventory to Performance Max for store goals campaigns. Your business can now appear as a 'Promoted Places in Navigation' pin on a user's map. For U.S. advertisers using PMax for store goals, these ads are now fully available. The best part? No additional setup is required.",
       "week": "2026-W28",
-      "importance": 4,
-      "relevance": 3,
-      "summary_hu": "A Google két frissítést vezet be a Performance Max kampányokhoz: a store goals kampányoknál elérhetővé válik a Waze hirdetési inventory ('Promoted Places in Navigation' pin), valamint bővül a csatornánkénti teljesítmény-riportolás. A Waze hirdetések jelenleg csak az USA-beli hirdetőknek érhetők el teljeskörűen, külön beállítás nélkül. A csatorna szintű riportolás nagyobb átláthatóságot ad a PMax teljesítményéről.",
-      "why_hu": "A csatorna szintű riportolás régóta hiányzó átláthatóságot ad a PMax kampányokhoz, ami minden piacon segíti az optimalizálást.",
-      "action_hu": "Ellenőrizd a PMax kampányok új csatorna szintű riportjait a fiókban, és elemezd, mely csatornák hozzák a konverziókat; a Waze inventory egyelőre csak US-hirdetőknek releváns.",
+      "importance": 3,
+      "relevance": 2,
+      "summary_hu": "A Google két frissítést jelentett be a Performance Max kampányokhoz. Az egyik: a Waze hirdetési készlet mostantól bekerül a store goals (üzleti látogatás céljú) PMax kampányokba, így a vállalkozás 'Promoted Places in Navigation' tűként jelenhet meg a felhasználók térképén. Ez az USA-ban működő hirdetőknél már teljesen elérhető, és nem igényel külön beállítást. A másik frissítés a csatornánkénti (inventory/channel) teljesítmény-riportok bővítése, ami átláthatóbbá teszi, mely felületeken hozott eredményt a kampány. Gyakorlatban ez jobb betekintést ad a PMax fekete dobozába és növelheti a helyi, offline konverziókat.",
+      "why_hu": "A Waze-integráció egyelőre csak USA-specifikus, de a csatornánkénti riportolás bővítése globálisan javítja a PMax átláthatóságát.",
+      "action_hu": "Ellenőrizd a PMax kampányaid csatornánkénti teljesítmény-riportjait, hogy lásd, mely felületek teljesítenek — a Waze funkcióra egyelőre EU-ban nincs teendő.",
       "seen_at": "2026-07-06T13:25:40.265Z",
-      "title_hu": "Új inventory és csatorna szintű riportolás a Performance Max kampányokban"
+      "title_hu": "Új megjelenési felületek és csatornánkénti teljesítmény-riportok a Performance Max kampányokban"
     },
     "https://support.google.com/google-ads/answer/16598240": {
       "guid": "https://support.google.com/google-ads/answer/16598240",
@@ -372,11 +372,11 @@
       "week": "2026-W28",
       "importance": 4,
       "relevance": 4,
-      "summary_hu": "A Google megszünteti a call ads (csak hívásra optimalizált) hirdetéseket. A telefonos lead-ek további generálásához át kell térni a call assets (hívás bővítmény) használatára responsive search ads (RSA) keretében. Az RSA-k a Google AI-t használva több cím és leírás kombinációit tesztelik, így illesztve a hirdetéseket a felhasználói igényekhez.",
-      "why_hu": "Aki hívás-alapú konverziókra épít kampányokat, annak kötelezően át kell állnia, különben elveszíti a call ads működését.",
-      "action_hu": "Nézd át a call-only kampányokat, és hozz létre RSA-kat call assets bővítménnyel, majd migráld át a hívásalapú kampányokat a deprecation előtt.",
+      "summary_hu": "A Google megszunteti a call ads (call-only) hirdetestipust, amely kizarolag telefonhivas-generalasra szolgalt. A telefonos leadek folyamatos gyujtesehez at kell allni a responsive search ads (RSA) melle helyezett call assetek (hivas bovitmenyek) hasznalatara. Az RSA-k Google AI segitsegevel illesztik a hirdeteseket a felhasznaloi szandekhoz, es a tobb megadott headline es description automatikus tesztelesevel valasztjak ki a legjobban teljesito kombinaciokat. A valtas gyakorlatban azt jelenti, hogy a hivas-fokuszu kampanyokat RSA + call asset strukturaba kell atszervezni. Aki nem lep idoben, elvesztheti a telefonos konverzios csatornat, amint a call ads teljesen kikerul a rendszerbol.",
+      "why_hu": "A telefonos leadekre epito hirdetok kampanyszerkezetet kozvetlenul erinti a valtas, kulonben leallhat a hivasgeneralas.",
+      "action_hu": "Nezd at a call-only kampanyaidat, hozz letre RSA-kat call assetekkel es allitsd be a hivaskonverzio-kovetest, mielott a call ads megszunik.",
       "seen_at": "2026-07-06T13:25:40.265Z",
-      "title_hu": "Fontos: váltás a call ads-ről a call assets-re"
+      "title_hu": "Fontos teendo: valts a call ads hirdetesekrol call assets megoldasra"
     },
     "https://support.google.com/google-ads/answer/16501674": {
       "guid": "https://support.google.com/google-ads/answer/16501674",
@@ -390,11 +390,11 @@
       "week": "2026-W28",
       "importance": 4,
       "relevance": 4,
-      "summary_hu": "A Google Ads új funkciókat vezet be, amelyekkel a Search, Shopping, Performance Max és Demand Gen kampányok egyszerre irányíthatók a weboldalra és az appra is. A cél a webes felfedezéstől az appon belüli konverzióig tartó egységes, összekapcsolt ügyfélút biztosítása és a workflow egyszerűsítése.",
-      "why_hu": "Ha az ügyfélnek weboldala és appja is van, ez lehetővé teszi az egységes kampánykezelést és jobb konverziós teljesítményt a két platform között.",
-      "action_hu": "Nézd át azoknál a fiókoknál, ahol web és app is van, hogy elérhetők-e már az új összekapcsolási beállítások, és teszteld egy kampányon a web+app célzást.",
+      "summary_hu": "A Google új funkciókat vezet be, amelyekkel a Search, Shopping, Performance Max és Demand Gen kampányok egyszerre irányíthatják a felhasználókat weboldalra és alkalmazásba is. A cél a webes felfedezéstől az appon belüli konverzióig tartó egységes, összekapcsolt ügyfélútvonal kialakítása. Az újítások leegyszerűsítik azoknak a hirdetőknek a munkafolyamatát, akik eddig külön kezelték a web- és app-hirdetéseiket. A megoldás egységes, konzisztens élményt biztosít a felhasználóknak platformtól függetlenül. Gyakorlatban ez azt jelenti, hogy egy kampányon belül optimalizálható a forgalom mindkét felület felé, ahelyett hogy párhuzamos, szétaprózott struktúrákat kellene fenntartani.",
+      "why_hu": "Ha egy hirdetőnek egyszerre van weboldala és alkalmazása, ez a funkció jelentősen egyszerűsíti a kampánykezelést és javíthatja a konverziós teljesítményt.",
+      "action_hu": "Ellenőrizd, hogy a funkció elérhető-e a fiókjaidban, és teszteld app-pal is rendelkező ügyfeleknél a web-app összekapcsolt kampánybeállítást.",
       "seen_at": "2026-07-06T13:25:40.266Z",
-      "title_hu": "Új funkciók a web- és app-hirdetések összekapcsolására a Google Adsben"
+      "title_hu": "Új eszközök a web- és app-hirdetések összekapcsolására a Google Adsben"
     },
     "https://support.google.com/google-ads/answer/16451273": {
       "guid": "https://support.google.com/google-ads/answer/16451273",
@@ -408,11 +408,11 @@
       "week": "2026-W28",
       "importance": 5,
       "relevance": 5,
-      "summary_hu": "A Google több új funkciót vezet be a Performance Max kampányokhoz, amelyek nagyobb átláthatóságot és kontrollt adnak. Ezek közé tartozik a kampányszintű negatív kulcsszó listák, a megnövelt search theme limitek és a bővebb demográfiai targetálás, valamint fejlettebb riportok és diagnosztika az új ügyfélszerzéshez. A csatorna-teljesítmény riport béta is elérhetővé vált a Google Marketing Live-on bejelentetten.",
-      "why_hu": "A PMax eddig egyik legnagyobb hiányossága a korlátozott kontroll és átláthatóság volt, ezek a fejlesztések közvetlenül javítják a napi kampánykezelést.",
-      "action_hu": "Ellenőrizd a fiókjaidban a kampányszintű negatív kulcsszó lista és a csatorna-teljesítmény riport elérhetőségét, és állítsd be a nem kívánt megjelenések kizárását a PMax kampányokban.",
+      "summary_hu": "A Google tobb uj vezerlot es riportfunkciot vezet be a Performance Max kampanyokhoz, amelyek nagyobb atlathatosagot es iranyithatosagot adnak. Elerhetove valik a kampanyszintu negativ kulcsszo lista, ami eddig kiemelt hianyzo funkcio volt a hirdetok szamara. Emelkedik a megadhato search theme-ek szama, es bovul a demografiai celzas lehetosege. Ehhez tarsul a Google Marketing Live-on bejelentett channel performance report beta, amely csatornankent (pl. Kereses, YouTube, Display) mutatja a teljesitmenyt. Tovabba javul az uj vasarlo szerzes (new customer acquisition) teljesitmenye es a hozza kapcsolodo riportolas es diagnosztika.",
+      "why_hu": "A kampanyszintu negativ kulcsszavak es a csatorna szintu riportok evek ota var funkciok, amelyek erdemben javitjak a Performance Max atlathatosagat es optimalizalhatosagat.",
+      "action_hu": "Nyisd meg a Performance Max kampanyaidat, allitsd be a kampanyszintu negativ kulcsszo listat, es ellenorizd a channel performance riportban a csatornankenti teljesitmenyt.",
       "seen_at": "2026-07-06T13:25:40.266Z",
-      "title_hu": "Több átláthatóság és kontroll a Performance Max kampányokban"
+      "title_hu": "Tobb attekinthetoseg es kontroll a Performance Max kampanyokban"
     },
     "https://support.google.com/google-ads/answer/16323381": {
       "guid": "https://support.google.com/google-ads/answer/16323381",
@@ -425,12 +425,12 @@
       "snippet": "Looking to grow the reach of your YouTube channel? With Demand Gen today, you can drive new subscriptions by selecting the YouTube engagements campaign goal. Now, we're introducing a strategy to optimize for follow-on views as part of engagement campaigns. Follow-on views are when people watch more videos from your YouTube channel after seeing your ad. This optimization will seek to connect with viewers most likely to organically continue watching your YouTube channel’s videos. You can now optimize for YouTube follow-on views within Demand Gen campaigns, offering a simple way to grow engagemen",
       "week": "2026-W28",
       "importance": 3,
-      "relevance": 4,
-      "summary_hu": "A Google Ads uj optimalizalasi lehetoseget vezet be a Demand Gen kampanyok engagement celjaihoz, amely a YouTube follow-on view-kra optimalizal. A follow-on view azt jelenti, amikor a felhasznalok a hirdetes megtekintese utan tovabbi videokat neznek meg a csatornarol. A rendszer azokat a nezoket celozza, akik a legnagyobb valoszinuseggel organikusan tovabb nezik a csatorna tartalmait.",
-      "why_hu": "Uj optimalizacios cel a Demand Gen kampanyokban, amely a YouTube csatorna elerest es engagement-et novelo ugyfeleknek kozvetlenul hasznos.",
-      "action_hu": "Csatorna-nagyitasi celu ugyfeleknel valaszd a YouTube engagements kampanycelt es teszteld a follow-on views optimalizaciot a Demand Gen kampanyban.",
+      "relevance": 3,
+      "summary_hu": "A Demand Gen kampányokban a YouTube engagements célon belül új optimalizálási stratégia jelent meg: a follow-on nézetekre való optimalizálás. A follow-on nézet azt jelenti, amikor a felhasználók a hirdetés megtekintése után további videókat néznek meg az adott YouTube-csatornáról. A rendszer azokat a nézőket célozza, akik a legnagyobb valószínűséggel organikusan tovább nézik a csatorna tartalmait. Ez a csatorna elköteleződésének és a feliratkozók növelésének egyszerű módja lehet. A funkció kifejezetten a csatornaépítésre és nem közvetlen konverziókra fókuszáló hirdetőknek szól.",
+      "why_hu": "Ha ügyfeleid YouTube-jelenlétet és csatorna-elköteleződést építenek, ez egy új, célzott optimalizálási opció a Demand Gen eszköztárban.",
+      "action_hu": "Csatornaépítési céllal futó Demand Gen kampányoknál teszteld a YouTube engagements célon belül a follow-on views optimalizálást, és mérd a feliratkozás/megtekintés alakulását.",
       "seen_at": "2026-07-06T13:25:40.266Z",
-      "title_hu": "YouTube follow-on view optimalizacio elerheto a Demand Gen kampanyokban"
+      "title_hu": "YouTube follow-on nézetek optimalizálása mostantól elérhető a Demand Gen kampányokban"
     },
     "https://support.google.com/google-ads/answer/16290177": {
       "guid": "https://support.google.com/google-ads/answer/16290177",
@@ -444,11 +444,11 @@
       "week": "2026-W28",
       "importance": 5,
       "relevance": 5,
-      "summary_hu": "A Google Marketing Live 2025 eseményen a Google bemutatta új, AI-alapú hirdetési újításait, köztük a Power Pack kampánymegoldás-csomagot, amely a keresés és a multimodális élmények új korszakára épül. A bejelentések kiterjednek a keresési és videó/app hirdetések jövőjére, a kreatív eszközökre, a mérésre és adatokra, valamint az ún. agentic (ügynöki) képességekre. Mindez az AI-vezérelt kampánykezelés következő generációját vetíti előre.",
-      "why_hu": "A Google éves fő bejelentései meghatározzák a következő időszak hirdetési funkcióit és irányát, amelyek közvetlenül érintik a napi kampánykezelést.",
-      "action_hu": "Nézd át a részletes bejelentéslistát, és jelöld ki, mely új funkciók (pl. Power Pack, mérési újítások) tesztelhetők a saját fiókjaidban, amint elérhetővé válnak az EU-ban.",
+      "summary_hu": "A Google a Marketing Live 2025 eseményen bemutatta a következő generációs, AI-alapú hirdetési megoldásait, amelyek a keresés és a multimodális élmények új korszakára épülnek. A központi elem a Power Pack, egy AI-vezérelt kampánymotor, amely a keresési hirdetések teljesítményét hivatott a következő szintre emelni. A bejelentések a keresés, a videó és appok, a kreatívok, valamint a mérés és adatkezelés jövőjét érintik. Újdonságként megjelennek az agentic (ügynöki) képességek, amelyek automatizáltabb kampánykezelést tesznek lehetővé. A csomag az AI Overviews és az AI Mode térnyerésére reagál, ahol a felhasználók egyre inkább AI-alapú felületeken keresnek információt. Gyakorlatban a hirdetőknek fel kell készülniük arra, hogy a keresési hirdetések egyre inkább automatizált, AI-vezérelt logika mentén jelennek meg.",
+      "why_hu": "A Google Ads jövőbeli irányát és a napi kampánykezelést közvetlenül meghatározó stratégiai bejelentésekről van szó.",
+      "action_hu": "Olvasd át a teljes összefoglalót, és azonosítsd, mely új AI-funkciók (pl. Power Pack, agentic képességek) várhatók az EU-ban, majd tervezd meg a tesztelésüket.",
       "seen_at": "2026-07-06T13:25:40.267Z",
-      "title_hu": "Google Marketing Live 2025: a bejelentések összefoglalója"
+      "title_hu": "Google Marketing Live 2025: az összes bejelentés összefoglalója"
     },
     "https://support.google.com/google-ads/answer/16214371": {
       "guid": "https://support.google.com/google-ads/answer/16214371",
@@ -462,11 +462,11 @@
       "week": "2026-W28",
       "importance": 4,
       "relevance": 4,
-      "summary_hu": "A Google bevezeti a hirdetoknek szolo tag gateway megoldast, amely a szerveroldali (first-party) meresi infrastruktura kiepiteset segiti a pontosabb konverziomeres es kampanyoptimalizacio erdekeben. A cel az adaterosseg novelese, hogy az AI-alapu licitalas jobban teljesitsen a valtozo felhasznaloi viselkedes es a sutik korlatozasa kozott. Az adatok osszekapcsolasa a Google Ads Data Manageren keresztul tortenik.",
-      "why_hu": "A pontos, first-party alapu konverziomeres kozvetlenul befolyasolja a Smart Bidding es a kampanyok teljesitmenyet a sutimentes kornyezetben.",
-      "action_hu": "Vizsgald meg a tag gateway (server-side tagging) bevezeteset es kapcsold ossze az adatforrasokat a Google Ads Data Manageren keresztul a meres javitasahoz.",
+      "summary_hu": "A Google bemutatja a hirdetoknek szant tag gateway megoldast, amely a szerveroldali cimkezes egyszerusitett formaja: a mereskodot a sajat domainedrol, first-party kornyezetben szolgalja ki. Ezzel csokken a bongeszoi korlatozasok (ad-blockerek, ITP, cookie-elutasitas) hatasa a konverziomeresre, igy pontosabb adat kerul a rendszerbe. A jobb adatminoseg kozvetlenul tamogatja az AI-alapu licitalasi strategiakat, mint a Smart Bidding es a Performance Max. A megoldas a Google Ads Data Manageren keresztul kapcsolodik, es a teljes vasarloi utat (web, app, offline) igyekszik osszefuzni. A gyakorlatban erosebb first-party adatalapot ad, ami jobb kampanyoptimalizaciot es mereskonzisztenciat eredmenyez.",
+      "why_hu": "A pontosabb konverziomeres es az erosebb first-party adat kozvetlenul javitja az AI-vezerelt licitalas es a kampanyteljesitmeny eredmenyeit, ami az EU-s cookie-korlatozasok mellett kulonosen fontos.",
+      "action_hu": "Ellenorizd a jelenlegi cimkezesi setupodat, es merd fel a tag gateway (szerveroldali/first-party meres) bevezetesenek lehetoseget a Google Ads Data Manageren keresztul.",
       "seen_at": "2026-07-06T13:25:40.267Z",
-      "title_hu": "Pontosabb konverziomeres a Google tag gateway segitsegevel hirdetoknek"
+      "title_hu": "Pontosabb konverziomeres a Google tag gateway-jel hirdetoknek"
     },
     "https://support.google.com/google-ads/answer/16218300": {
       "guid": "https://support.google.com/google-ads/answer/16218300",
@@ -480,11 +480,11 @@
       "week": "2026-W28",
       "importance": 3,
       "relevance": 2,
-      "summary_hu": "A Google Ads bevezette a gyorsított checkout-élményt a Demand Gen kampányokban, amelyek a YouTube In-stream felületén futnak, kiegészítve a Performance Max kampányokat és az organikus Shopping találatokat. A felhasználók a termék megtalálásától zökkenőmentesen jutnak el a kosárba vagy a checkout oldalra a kereskedő weboldalán. A funkció aktiválásához a kereskedőknek a Google Merchant Centerben, fiók szinten kell megadniuk a kosár- vagy checkout oldal URL-sablonját.",
-      "why_hu": "Egyelőre csak az USA-ban elérhető, így egy magyar/EU piacon dolgozó PPC szakembernek jelenleg nincs közvetlen gyakorlati hatása.",
-      "action_hu": "Jegyezd fel a funkciót, és kövesd a Google bejelentéseit az EU/magyar piaci elérhetőség kapcsán.",
+      "summary_hu": "A Google bevezette a gyorsított (accelerated) checkout élményt a Demand Gen kampányokban, amelyek YouTube In-stream felületen futnak. A funkció eddig a Performance Max kampányoknál és az organikus shopping találatoknál volt elérhető, most a Demand Genre is kiterjesztették. A felhasználók a termék megtalálásától közvetlenül a kereskedő weboldalán lévő kosárhoz vagy pénztárhoz jutnak el, gördülékenyebbé téve a vásárlási folyamatot. A kereskedők a Google Merchant Centerben, fiók szintjén megadott checkout- vagy kosároldal URL-sablonnal kapcsolhatják be a funkciót. A bevezetés jelenleg csak az egyesült államokbeli piacra korlátozódik.",
+      "why_hu": "Jelenleg csak az USA-ra vonatkozik, így egy magyar/EU piacon dolgozó szakembernek egyelőre nincs közvetlen hatása.",
+      "action_hu": "Jegyezd fel a funkciót, és kövesd, mikor válik elérhetővé az EU/magyar piacon, hogy a Merchant Center beállítást időben elvégezhesd.",
       "seen_at": "2026-07-06T13:25:40.267Z",
-      "title_hu": "Gyorsított checkout-élmény érkezett a Demand Gen kampányokhoz az USA-ban"
+      "title_hu": "Gyorsított checkout élmény érkezett a Demand Gen kampányokhoz az USA-ban"
     },
     "https://support.google.com/google-ads/answer/16206862": {
       "guid": "https://support.google.com/google-ads/answer/16206862",
@@ -496,13 +496,13 @@
       "published": null,
       "snippet": "Today, we’re sharing more about a recent change we made to deliver more relevant Search ads at the bottom of the search results page. When someone searches on Google, we run different auctions for each ad location where we show Search ads—for example top ads are selected by a different Search ad auction from ads that show in other ad locations. Until now, Search ads from a given advertiser were generally restricted to a single ad location on a given page. Recently, we started looking deeply at the user experience with ads lower down the page and observed something interesting. Often, users wou",
       "week": "2026-W28",
-      "importance": 4,
+      "importance": 3,
       "relevance": 4,
-      "summary_hu": "A Google módosította a Search hirdetések működését: mostantól egy hirdető ugyanazon a keresési oldalon több hirdetéspozícióban is megjelenhet, nem csak egyben. Az oldal alján külön aukció fut, és a Google azt tapasztalta, hogy a felhasználók gyakran a lap alján is releváns hirdetésekkel találkoznak, ezért engedélyezi ugyanazon hirdető ismételt megjelenését. Ez befolyásolhatja az impressziók, kattintások és a költés eloszlását a kampányokban.",
-      "why_hu": "A változás közvetlenül érinti a Search kampányok teljesítménymutatóit és költségeloszlását, így az elemzést és optimalizálást is befolyásolja.",
-      "action_hu": "Ellenőrizd a Search kampányok impresszió- és pozíciós adatait a bevezetés óta, és figyeld, hogy a lap alján megjelenő ismételt megjelenések hogyan hatnak a CTR-re, CPC-re és ROAS-ra.",
+      "summary_hu": "A Google módosította, ahogyan a keresési találati oldal alján megjelenő hirdetéseket kezeli. Eddig egy adott hirdető hirdetései általában egyetlen hirdetéshelyre korlátozódtak egy oldalon, mivel az egyes pozíciókra (pl. felső és alsó hirdetések) külön aukciók futnak. A mostani változással egy hirdető hirdetése immár az oldal alján is megjelenhet, akkor is, ha már fentebb is szerepelt, ha az jobb felhasználói élményt és relevánsabb találatot eredményez. Ez azt jelenti, hogy ugyanaz a hirdető több pozíciót is elfoglalhat egy oldalon. A gyakorlatban ez több megjelenési lehetőséget és potenciálisan nagyobb láthatóságot adhat a hirdetőknek, de érdemes figyelni a teljesítménymutatók (pl. CTR, konverziós arány) alakulására az egyes pozíciók szerint.",
+      "why_hu": "A hirdetéshelyek logikájának módosítása közvetlenül befolyásolja a keresési kampányok megjelenéseit és pozíciónkénti teljesítményét.",
+      "action_hu": "Nézd át a keresési kampányok teljesítményét pozíció (top vs. other) szerinti bontásban, és kövesd, hogyan alakulnak az impressziók és költések az alsó hirdetéshelyeken.",
       "seen_at": "2026-07-06T13:25:40.268Z",
-      "title_hu": "Relevánsabb keresési hirdetések az oldal alján"
+      "title_hu": "Relevánsabb keresési hirdetések a találati oldal alján"
     },
     "https://support.google.com/google-ads/answer/16127398": {
       "guid": "https://support.google.com/google-ads/answer/16127398",
@@ -516,9 +516,9 @@
       "week": "2026-W28",
       "importance": 4,
       "relevance": 4,
-      "summary_hu": "A Google új customer lifecycle célokat és riportokat vezet be a Performance Maxban: a retention (megtartási) célok mostantól teljeskörűen elérhetők, hogy magasabban lehessen licitálni a lemorzsolódott ügyfelekre, emellett új oszlopban jelenik meg az ügyfélszerzési költség (CAC) riportolás. Emellett bővülnek a képvezérlési (image controls) lehetőségek a kreatívok jobb kontrolljához.",
-      "why_hu": "A PMax kampányok napi kezelését közvetlenül érinti, mert pontosabb célzást és mérést tesz lehetővé az ügyfél-életciklus mentén.",
-      "action_hu": "Nézd át a PMax kampányok retention céljait és a CAC riport oszlopot, majd állítsd be a lemorzsolódott ügyfelekre vonatkozó licitálást a megtartási stratégiához igazítva.",
+      "summary_hu": "A Google új customer lifecycle célokat és riportokat vezet be a Performance Maxban: a retention (visszaszerzési) célok mostantól teljeskörűen elérhetők, így magasabb licit adható az elpártolt (lapsed) ügyfelek visszaszerzésére. A customer acquisition cost (új ügyfél megszerzési költsége) új oszlopként jelenik meg a kampányriportokban, ami átláthatóbbá teszi az akvizíció költséghatékonyságát. Emellett bővülnek a képvezérlési (image controls) lehetőségek a kreatívok jobb kézben tartására. A frissítések a Google idei, kontroll-, cél-, riport- és kreatívfókuszú fejlesztéssorozatába illeszkednek. A hirdetők számára ez pontosabb célzást és mérést jelent a meglévő és új ügyfelek megkülönböztetésében.",
+      "why_hu": "A lifecycle célok és az akvizíciós költség riportálása lehetővé teszi, hogy a Pmax kampányokban külön kezeld az új és a visszaszerzendő ügyfeleket, jobban optimalizálva a bid strategy-t.",
+      "action_hu": "Nézd át futó Pmax kampányaidban a retention célok bekapcsolását és aktiváld a customer acquisition cost oszlopot a riportban, hogy elkülönítve mérd az akvizíciós teljesítményt.",
       "seen_at": "2026-07-06T13:25:40.268Z",
       "title_hu": "Új célok és képvezérlési lehetőségek érkeznek a Performance Maxhoz"
     },
@@ -534,11 +534,11 @@
       "week": "2026-W28",
       "importance": 4,
       "relevance": 4,
-      "summary_hu": "A Google új, AI-alapú változtatásokat vezet be a Search kampányoknál és kreatívoknál, amelyek növelik az asset-rugalmasságot. A rendszer automatikusan a leghatékonyabb asset-kombinációkat keresi meg, hogy relevánsabb hirdetéseket és jobb teljesítményt érjen el a felhasználói szándékokhoz igazodva. A cél a felhasználói élmény javítása és a befektetett kreatívok jobb kihasználása.",
-      "why_hu": "A Search kampányok kreatív- és asset-kezelése közvetlenül befolyásolja a napi hirdeteskezelést és a hirdetések teljesítményét.",
-      "action_hu": "Nézd át a Search kampányaid asset-jeit (címsorok, leírások), gondoskodj elegendő és változatos, jó minőségű assetről, és kövesd a hirdetéserősség (Ad Strength) mutatóit a rugalmasabb AI-kombinációk kihasználásához.",
+      "summary_hu": "A Google új, AI-alapú változtatásokat vezet be a Search kampányokban és kreatívokban, amelyek célja a nagyobb asset flexibility és jobb teljesítmény. A rendszer a hirdető által feltöltött asseteket (címsorok, leírások stb.) rugalmasabban kombinálja, hogy az adott keresésre a leginkább releváns hirdetés jelenjen meg. Ez azt jelenti, hogy a Google automatikusan optimalizálhatja az asset-kombinációkat a felhasználói kontextushoz igazodva. A hirdetőknek érdemes minél több, minőségi és változatos assetet biztosítaniuk, mert a rendszer ezek közül választja ki a legjobb párosításokat. A cél a jobb felhasználói élmény és a hatékonyabb Search teljesítmény a meglévő kreatív befektetések kihasználásával.",
+      "why_hu": "A Search hirdetések asset-kezelésének AI-vezérelt rugalmassága közvetlenül befolyásolja, hogyan épülnek fel és teljesítenek a napi kampányok.",
+      "action_hu": "Ellenőrizd és bővítsd a Search kampányok assetjeit változatos, jó minőségű címsorokkal és leírásokkal, hogy az AI a lehető legjobb kombinációkból válogathasson.",
       "seen_at": "2026-07-06T13:25:40.269Z",
-      "title_hu": "Nagyobb asset-rugalmasság a jobb teljesítményért az AI-alapú Search hirdetéseknél"
+      "title_hu": "Rugalmasabb asset-kezeles az AI-alapú Search hirdetésekben"
     },
     "https://searchengineland.com/?p=481572": {
       "guid": "https://searchengineland.com/?p=481572",
@@ -552,13 +552,13 @@
       "week": "2026-W28",
       "importance": 3,
       "relevance": 3,
-      "summary_hu": "A cikk szerint a fizetett média (értékelések, kreátor-együttműködések, szponzorált tartalmak) egyre inkább befolyásolja, hogyan értelmezik és ajánlják a márkát az AI-alapú keresőrendszerek. A hagyományos paid media így közvetve SEO-értéket és láthatóságot is teremt az AI-válaszokban, nem csupán közvetlen konverziót.",
-      "why_hu": "Az AI-keresés terjedésével a paid media szerepe kiszélesedik, ami hosszú távon átalakíthatja a kampánytervezés és a mérés logikáját.",
-      "action_hu": "Vizsgáld meg, hogy a jelenlegi szponzorált tartalom- és kreátor-kampányok miként jelennek meg az AI-keresőkben (pl. ChatGPT, Google AI Overviews), és építs be ilyen szempontú láthatósági mérést a stratégiába.",
+      "summary_hu": "A cikk amellett érvel, hogy az AI-alapú keresőrendszerek (pl. AI Overviews, ChatGPT, Perplexity) másképp dolgozzák fel a márkákat, és a fizetett média egyre inkább hozzájárul ahhoz, ahogyan ezek a rendszerek megértik és ajánlják a márkát. Az értékelések, kreátori (influencer) együttműködések és szponzorált tartalmak olyan digitális jelzéseket hoznak létre, amelyeket az AI-modellek betáplálnak a válaszaikba. Ezáltal a paid media hatása túlmutat a közvetlen konverzión: befolyásolja a márka említettségét és láthatóságát az AI-válaszokban. A szerző szerint a hirdetőknek a fizetett kampányok tervezésénél már azt is figyelembe kell venniük, milyen tartalmat és említést generálnak, amit az AI később felhasználhat. Gyakorlatban ez a paid media és a SEO/brand-stratégia összemosódása felé mutat.",
+      "why_hu": "Az AI-keresés terjedésével a fizetett kampányok célja és mérése tágul, ami átalakíthatja a paid media szerepét és értékelését.",
+      "action_hu": "Vizsgáld meg, hogy jelenlegi kreátori és szponzorált tartalmi kampányaid milyen említéseket generálnak, és kezdd el követni, hogyan jelenik meg a márkád az AI-alapú keresési válaszokban.",
       "seen_at": "2026-07-06T13:25:40.269Z",
-      "title_hu": "A fizetett média SEO-befektetéssé válik az AI-alapú keresésben"
+      "title_hu": "A fizetett média egyre inkább SEO-befektetés az AI-alapú keresésben"
     }
   },
   "content": [],
-  "updated_at": "2026-07-06T13:28:54.407Z"
+  "updated_at": "2026-07-06T13:49:51.896Z"
 }
