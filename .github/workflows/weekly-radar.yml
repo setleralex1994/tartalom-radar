@@ -1,9 +1,10 @@
-name: Heti Tartalom Radar
+name: Tartalom Radar (napi gyűjtés + heti e-mail)
 
 on:
   schedule:
-    # Minden hetfo 06:00 UTC (nyaron ~08:00, telen ~07:00 CET). A gepednek nem kell bekapcsolva lennie.
-    - cron: '0 6 * * 1'
+    # Minden nap 06:00 UTC (nyaron ~08:00, telen ~07:00 CET). A gepednek nem kell bekapcsolva lennie.
+    # A felulet igy naponta frissul; az osszefoglalo e-mail viszont csak hetfon megy ki.
+    - cron: '0 6 * * *'
   workflow_dispatch: {} # kezi inditas is lehetseges a GitHub Actions fulon
 
 permissions:
@@ -24,9 +25,9 @@ jobs:
       - name: Fuggosegek
         run: npm ci
 
-      - name: Radar futtatasa
-        # ANTHROPIC_API_KEY nelkul: csak gyujtes (az online felulethez ez is eleg).
-        # Kulccsal: magyar osszefoglalo + relevancia + heti e-mail is megy.
+      - name: Radar futtatasa (napi gyujtes; e-mail csak hetfon)
+        # ANTHROPIC_API_KEY nelkul: csak gyujtes. Kulccsal: magyar osszefoglalo + relevancia.
+        # E-mail (RADAR_SEND=1) csak hetfon (UTC nap = 1).
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           GMAIL_USER: ${{ secrets.GMAIL_USER }}
@@ -34,7 +35,15 @@ jobs:
           DIGEST_TO: ${{ secrets.DIGEST_TO }}
           RADAR_DAYS: '7'
           MIN_RELEVANCE: '3'
-        run: node src/radar.js
+        run: |
+          if [ "$(date -u +%u)" = "1" ]; then
+            export RADAR_SEND=1
+            echo "Hetfo — heti osszefoglalo e-mail is megy."
+          else
+            export RADAR_SEND=0
+            echo "Napi gyujtes — nincs e-mail."
+          fi
+          node src/radar.js
 
       - name: Frissitett hirtar visszacommitolasa
         run: |
@@ -44,7 +53,7 @@ jobs:
           if git diff --staged --quiet; then
             echo "Nincs valtozas a hirtarban."
           else
-            git commit -m "data: heti hir-frissites [skip ci]"
+            git commit -m "data: napi hir-frissites [skip ci]"
             git push
           fi
 

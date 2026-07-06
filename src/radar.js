@@ -121,7 +121,8 @@ export async function runRadar({ send = true } = {}) {
 const invokedDirectly =
   process.argv[1] && realpathSync(process.argv[1]) === fileURLToPath(import.meta.url);
 if (invokedDirectly) {
-  runRadar()
+  // E-mail csak akkor, ha RADAR_SEND != '0' (a workflow hetfon allitja 1-re, mas nap 0-ra).
+  runRadar({ send: process.env.RADAR_SEND !== '0' })
     .then((r) => console.log('Kesz:', r))
     .catch((e) => {
       console.error(e);
